@@ -1,10 +1,13 @@
+import { PrimaryLayout } from "../core/PrimaryLayout";
+import { SplashBlurb } from "./SplashBlurb/SplashBlurb";
+
 const AboutPage = () => {
   return (
-    <main className="flex flex-col gap-3">
-      <div>This is the about page</div>
-      <div>info item 1</div>
-      <div> info item 2</div>
-    </main>
+    <PrimaryLayout>
+      <main className="flex flex-col p-4 min-h-[calc(100vh)] justify-center">
+        <SplashBlurb />
+      </main>
+    </PrimaryLayout>
   );
 };
 

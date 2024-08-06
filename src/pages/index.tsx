@@ -1,5 +1,4 @@
-import AboutPage from "@/app/components/AboutPage/AboutPage";
-import HomePage from "@/app/components/HomePage/HomePage";
+import MainPage from "@/app/components/MainPage/MainPage";
 import Head from "next/head";
 
 const Home = () => {
@@ -8,7 +7,7 @@ const Home = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <AboutPage />
+      <MainPage />
     </div>
   );
 };

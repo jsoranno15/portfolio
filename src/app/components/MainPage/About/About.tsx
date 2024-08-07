@@ -4,8 +4,8 @@ export const AboutSection = () => {
       id="section-about"
       className="flex py-[40px] flex-col gap-5 min-h-[500px]"
     >
-      <div className="text-6xl">About</div>
-      <div className="flex flex-col gap-3 w-2/3">
+      <div className="text-xl md:text-6xl">About</div>
+      <div className="flex flex-col gap-3 md:w-2/3">
         <span>
           Lorem ipsum odor amet, consectetuer adipiscing elit. Neque turpis
           magna ligula sit lacus nostra. Placerat purus interdum vitae laoreet

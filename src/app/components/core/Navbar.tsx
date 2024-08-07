@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   return (
     <nav className="p-4 pt-8 md:pt-16 absolute w-full">
-      <div className="flex items-center justify-center w-full gap-8">
+      <div className="flex flex-wrap items-center justify-center w-full gap-2 md:gap-8 text-sm md:text-base">
         <a
           href="section-splash"
           onClick={(e) => handleScroll(e, "section-splah")}

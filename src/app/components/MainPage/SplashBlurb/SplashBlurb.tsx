@@ -5,7 +5,7 @@ export const SplashBlurb = () => {
       className="min-h-[calc(100vh)] flex items-center  "
     >
       <div className="flex flex-col">
-        <div className="text-[96px] leading-[96px] font-black ">
+        <div className="text-[36px] md:text-[96px] leading-[96px] font-black ">
           Juliana Soranno
         </div>
 

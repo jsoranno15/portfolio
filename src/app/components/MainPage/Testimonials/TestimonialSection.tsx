@@ -8,7 +8,7 @@ export const TestimonialSection = () => {
       id="section-testimonials"
       className="flex py-[40px] flex-col gap-8 "
     >
-      <div className="text-6xl">Testimonials</div>
+      <div className="text-xl md:text-6xl">Testimonials</div>
       <div className="flex flex-col gap-20">
         {Testimonials.map((item, i) => {
           return (

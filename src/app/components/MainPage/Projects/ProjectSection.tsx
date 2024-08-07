@@ -30,9 +30,9 @@ export const ProjectSection = () => {
 
   return (
     <section id="section-projects" className="flex flex-col py-[40px] gap-5 ">
-      <div className="text-6xl">Projects</div>
+      <div className="text-xl md:text-6xl">Projects</div>
 
-      <div className="flex gap-4 mb-6">
+      <div className="flex flex-wrap gap-2  mb-6">
         {["all", "webDev", "game", "moCap"].map((type) => (
           <button
             key={type}
@@ -47,7 +47,7 @@ export const ProjectSection = () => {
       </div>
 
       <div
-        className={`grid gap-5  grid-cols-2  ${
+        className={`grid gap-5  sm:grid-cols-2  ${
           fadeOut ? "opacity-0" : "opacity-100"
         }`}
       >

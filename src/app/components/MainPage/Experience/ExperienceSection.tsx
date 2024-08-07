@@ -7,7 +7,7 @@ export const ExperienceSection = () => {
       id="section-exp"
       className="flex flex-col py-[40px] gap-5 min-h-[500px]"
     >
-      <div className="text-6xl">Experience</div>
+      <div className="text-xl md:text-6xl">Experience</div>
       <div className="flex flex-col gap-[50px] ">
         {Experience.map((item, index) => {
           return (
@@ -47,7 +47,7 @@ export const ExperienceSection = () => {
                   </div>
                 )}
                 {item.skills && (
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {item.skills.map((skill, i) => (
                       <div
                         key={i}

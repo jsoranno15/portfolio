@@ -8,7 +8,7 @@ import { TestimonialSection } from "./Testimonials/TestimonialSection";
 const MainPage = () => {
   return (
     <PrimaryLayout>
-      <main className="flex flex-col px-[48px] ">
+      <main className="flex flex-col p-4 sm:px-[48px] ">
         <SplashBlurb />
         <AboutSection />
         <ExperienceSection />

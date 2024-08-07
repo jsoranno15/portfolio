@@ -4,6 +4,7 @@ import { AboutSection } from "./About/About";
 import { ProjectSection } from "./Projects/ProjectSection";
 import { ExperienceSection } from "./Experience/ExperienceSection";
 import { TestimonialSection } from "./Testimonials/TestimonialSection";
+import { SkillsSection } from "./Skills/Skills";
 
 const MainPage = () => {
   return (
@@ -12,7 +13,7 @@ const MainPage = () => {
         <SplashBlurb />
         <AboutSection />
         <ExperienceSection />
-        {/* <SkillsSection /> */}
+        <SkillsSection />
         <ProjectSection />
         <TestimonialSection />
       </main>

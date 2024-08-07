@@ -1,6 +1,6 @@
 export const OYParagraph = () => {
   return (
-    <div className="flex flex-col gap-2 text-sm md:w-2/3">
+    <div className="flex flex-col gap-2 text-sm ">
       <span>
         Juliana and I worked together in the engineering team at Everyrealm,
         where we collaborated to build multiple products. She was always on top

@@ -8,7 +8,7 @@ export const Experience = [
       "Translated complex Figma designs into responsive, reusable React.js components, integrating features like account settings, crypto wallet connection, home pages, landing pages, profile pages, pop ups, and player tier/badge systems.",
       "Collaborated with backend developers to integrate AWS Lambda, DynamoDB, and API Gateway, significantly boosting application performance and scalability.",
     ],
-    skills: ["React.js ", "Next.js", "TypeScript", "Zustand", "TailwindCSS"],
+    skills: ["React.js ", "Next.js", "TypeScript", "TailwindCSS", "Zustand"],
     link: "https://www.everyworld.com/",
   },
   {

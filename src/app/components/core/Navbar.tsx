@@ -11,40 +11,19 @@ const Navbar = () => {
   };
   return (
     <nav className="p-4  pt-8 md:pt-16 absolute w-full">
-      <div className="flex flex-wrap items-center justify-center w-full gap-2 md:gap-8 text-sm md:text-base">
-        <a
-          href="section-splash"
-          onClick={(e) => handleScroll(e, "section-splah")}
-        >
-          Home
-        </a>
-        <a
-          href="section-about"
-          onClick={(e) => handleScroll(e, "section-about")}
-        >
-          About
-        </a>
-        <a href="section-exp" onClick={(e) => handleScroll(e, "section-exp")}>
-          Experience
-        </a>
-        {/* <a
-          href="section-skills"
-          onClick={(e) => handleScroll(e, "section-skills")}
-        >
-          Skills
-        </a> */}
-        <a
-          href="section-projects"
-          onClick={(e) => handleScroll(e, "section-projects")}
-        >
-          Projects
-        </a>
-        <a
-          href="section-testimonials"
-          onClick={(e) => handleScroll(e, "section-testimonials")}
-        >
-          Testimonials
-        </a>
+      <div className="flex flex-wrap items-center  justify-center w-full gap-2 md:gap-8 text-sm md:text-base">
+        {NavItems.map((item, i) => {
+          return (
+            <a
+              key={i}
+              href={item.section}
+              onClick={(e) => handleScroll(e, item.section)}
+              className=""
+            >
+              {item.name}
+            </a>
+          );
+        })}
         <a
           href="/docs/soranno_resume2024.pdf"
           target="_blank"
@@ -61,5 +40,32 @@ const Navbar = () => {
     </nav>
   );
 };
+
+const NavItems = [
+  {
+    name: "Home",
+    section: "section-splash",
+  },
+  {
+    name: "About",
+    section: "section-about",
+  },
+  {
+    name: "Skills",
+    section: "section-skills",
+  },
+  {
+    name: "Experience",
+    section: "section-exp",
+  },
+  {
+    name: "Projects",
+    section: "section-projects",
+  },
+  {
+    name: "Testimonials",
+    section: "section-testimonials",
+  },
+];
 
 export default Navbar;

@@ -11,11 +11,11 @@ export const ExperienceSection = () => {
       <div className="flex flex-col gap-[50px] ">
         {Experience.map((item, index) => {
           return (
-            <div key={index} className="md:flex   gap-[10px] md:gap-[100px] ">
-              <div className="whitespace-nowrap uppercase font-bold">
+            <div key={index} className="md:flex gap-[10px] md:gap-[80px] ">
+              <div className="whitespace-nowrap w-1/6  uppercase font-bold">
                 {item.timeFrame}
               </div>
-              <div className=" flex flex-col  gap-3">
+              <div className=" flex flex-col w-5/6 gap-3">
                 {item.link ? (
                   <a
                     href={item.link}

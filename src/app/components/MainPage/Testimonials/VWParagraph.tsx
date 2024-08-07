@@ -1,6 +1,6 @@
 export const VWParagprah = () => {
   return (
-    <div className="flex flex-col gap-2 text-sm md:w-2/3">
+    <div className="flex flex-col gap-2 text-sm">
       <span>
         I have had the pleasure of working alongside Juliana at Everyrealm,
         where she was one of the main front-end contributors to our web app,

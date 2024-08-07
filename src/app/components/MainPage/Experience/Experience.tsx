@@ -21,4 +21,15 @@ export const Experience = [
     skills: ["Management ", "Leadership", "Instructing"],
     link: "https://penguincodingschool.com/",
   },
+  {
+    timeFrame: "Sept 2019 — April 2023",
+    title: "New York University — Tandon School of Engineering",
+    subtitle: "B.S. Computer Science, Minor in Game Engineering",
+    skills: [
+      "Algorithms",
+      "Data Structures",
+      "Game Development",
+      "3D Animation",
+    ],
+  },
 ];

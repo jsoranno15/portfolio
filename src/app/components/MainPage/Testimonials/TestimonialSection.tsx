@@ -1,4 +1,6 @@
+import { QuoteIcon } from "../../icons";
 import { Testimonials } from "./Testimonial";
+import Image from "next/image";
 
 export const TestimonialSection = () => {
   return (
@@ -7,7 +9,7 @@ export const TestimonialSection = () => {
       className="flex py-[40px] flex-col gap-8 "
     >
       <div className="text-6xl">Testimonials</div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-20">
         {Testimonials.map((item, i) => {
           return (
             <div key={i} className="flex flex-col gap-2">
@@ -16,7 +18,15 @@ export const TestimonialSection = () => {
                   className="aspect-square rounded-full h-[60px] w-[60px]
               min-h-[60px] min-w-[60px]
               bg-gray-400"
-                />
+                >
+                  <Image
+                    src={`/img/${item.image}.jpg`}
+                    width={500}
+                    height={500}
+                    alt="Picture of the author"
+                    className="border object-contain rounded-full"
+                  ></Image>
+                </div>
                 <div className="flex flex-col">
                   <div className="font-bold">{item.name}</div>
                   <div
@@ -27,7 +37,18 @@ export const TestimonialSection = () => {
                   </div>
                 </div>
               </div>
-              {item.paragraphs}
+
+              <div className="flex gap-3 h-full">
+                <div className="flex h-4 w-4">
+                  <QuoteIcon />
+                </div>
+                {item.paragraphs}
+                <div className="flex items-end">
+                  <div className="flex h-4 w-4 rotate-180 ">
+                    <QuoteIcon />
+                  </div>
+                </div>
+              </div>
             </div>
           );
         })}

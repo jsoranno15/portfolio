@@ -76,3 +76,33 @@ export const LightIcon = () => {
     </svg>
   );
 };
+
+export const QuoteIcon = () => {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns-xlink="http://www.w3.org/1999/xlink"
+      fill="currentColor"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          fill="currentColor"
+          d="M7 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z"
+        ></path>{" "}
+        <path
+          fill="currentColor"
+          d="M16 7v7h-7v-7.1c0-4.8 4.5-5.4 4.5-5.4l0.6 1.4c0 0-2 0.3-2.4 1.9-0.4 1.2 0.4 2.2 0.4 2.2h3.9z"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+};

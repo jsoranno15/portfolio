@@ -1,4 +1,4 @@
-export const projects = [
+export const Projects = [
   {
     type: "webDev",
     title: "Everyworld",

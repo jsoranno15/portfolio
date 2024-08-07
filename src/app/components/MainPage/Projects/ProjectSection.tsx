@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
-import { projects } from "./projects";
+import { Projects } from "./Projects";
 
 const typeLabels: Record<string, string> = {
   all: "All",
@@ -23,8 +23,8 @@ export const ProjectSection = () => {
   useEffect(() => {
     const filteredProjects =
       selectedType === "all"
-        ? projects
-        : projects.filter((project: any) => project.type === selectedType);
+        ? Projects
+        : Projects.filter((project: any) => project.type === selectedType);
     setVisibleProjects(filteredProjects);
   }, [selectedType]);
 

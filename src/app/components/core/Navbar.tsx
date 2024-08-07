@@ -1,3 +1,6 @@
+import { ArrowIcon } from "../icons";
+import DarkModeToggle from "./DarkmodeToggle";
+
 const Navbar = () => {
   const handleScroll = (event: any, targetId: string) => {
     event.preventDefault();
@@ -7,8 +10,8 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="p-4 bg-gray-200 absolute w-full">
-      <div className="flex items-center justify-center w-full gap-4">
+    <nav className="p-4 pt-8 md:pt-16 absolute w-full">
+      <div className="flex items-center justify-center w-full gap-8">
         <a
           href="section-splash"
           onClick={(e) => handleScroll(e, "section-splah")}
@@ -24,12 +27,12 @@ const Navbar = () => {
         <a href="section-exp" onClick={(e) => handleScroll(e, "section-exp")}>
           Experience
         </a>
-        <a
+        {/* <a
           href="section-skills"
           onClick={(e) => handleScroll(e, "section-skills")}
         >
           Skills
-        </a>
+        </a> */}
         <a
           href="section-projects"
           onClick={(e) => handleScroll(e, "section-projects")}
@@ -42,7 +45,18 @@ const Navbar = () => {
         >
           Testimonials
         </a>
-        {/* <Link href="/test">Skills</Link> */}
+        <a
+          href="/docs/soranno_resume2024.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex gap-1 items-center"
+        >
+          Resume
+          <div className="h-5 w-5">
+            <ArrowIcon />
+          </div>
+        </a>
+        <DarkModeToggle />
       </div>
     </nav>
   );

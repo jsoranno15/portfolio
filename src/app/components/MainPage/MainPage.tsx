@@ -1,10 +1,9 @@
 import { PrimaryLayout } from "../core/PrimaryLayout";
 import { SplashBlurb } from "./SplashBlurb/SplashBlurb";
-import { SkillsSection } from "./Skills/Skills";
 import { AboutSection } from "./About/About";
-import { ProjectSection } from "./Projects/Projects";
-import { ExperienceSection } from "./Experience/Experience";
-import { TestimonialSection } from "./Testimonials/Testimonials";
+import { ProjectSection } from "./Projects/ProjectSection";
+import { ExperienceSection } from "./Experience/ExperienceSection";
+import { TestimonialSection } from "./Testimonials/TestimonialSection";
 
 const MainPage = () => {
   return (
@@ -13,7 +12,7 @@ const MainPage = () => {
         <SplashBlurb />
         <AboutSection />
         <ExperienceSection />
-        <SkillsSection />
+        {/* <SkillsSection /> */}
         <ProjectSection />
         <TestimonialSection />
       </main>

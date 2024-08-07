@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { Roboto } from "next/font/google";
 import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],

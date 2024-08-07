@@ -1,6 +1,9 @@
 export const SkillsSection = () => {
   return (
-    <section id="section-skills" className="flex flex-col gap-5 h-[500px]">
+    <section
+      id="section-skills"
+      className="flex py-[40px] flex-col gap-5 min-h-[500px]"
+    >
       <div className="text-6xl">Skills</div>
       <div className="flex flex-col gap-4">
         {SkillObj.map((item) => {

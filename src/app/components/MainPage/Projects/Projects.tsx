@@ -1,22 +1,70 @@
-import { Games } from "./Games";
-import { WebDev } from "./WebDev";
+export const projects = [
+  {
+    type: "webDev",
+    title: "Everyworld",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "...",
+  },
+  {
+    type: "webDev",
+    title: "Food Share",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "...",
+  },
+  {
+    type: "game",
+    title: "Ember Point",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb:
+      "Ember Point is a combat-focused, third-person action game. Play as a disgraced defector from a militaristic mega-corporation, Gravitus, who is stuck cleaning up the terrible mess his former employers left behind — all while wielding a top-secret “cure” for a gruesome disease.",
+  },
+  {
+    type: "game",
+    title: "Escape the Catacombs",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb:
+      "Ember Point is a combat-focused, third-person action game. Play as a disgraced defector from a militaristic mega-corporation, Gravitus, who is stuck cleaning up the terrible mess his former employers left behind — all while wielding a top-secret “cure” for a gruesome disease.",
+  },
+  {
+    type: "game",
+    title: "Shadow Frog",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb:
+      "Ember Point is a combat-focused, third-person action game. Play as a disgraced defector from a militaristic mega-corporation, Gravitus, who is stuck cleaning up the terrible mess his former employers left behind — all while wielding a top-secret “cure” for a gruesome disease.",
+  },
+  {
+    type: "game",
+    title: "King of the Colony",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "...",
+  },
 
-export const ProjectSection = () => {
-  return (
-    <section id="section-projects" className="flex flex-col gap-5 h-[500px]">
-      <div className="text-6xl">Projects</div>
-      <div className="flex flex-col">
-        <div className="text-xl font-bold">Web Dev</div>
-        {WebDev.map((web, i) => {
-          return <div key={i}>{web.title}</div>;
-        })}
-      </div>
-      <div className="flex flex-col">
-        <div className="text-xl font-bold">Games</div>
-        {Games.map((game, i) => {
-          return <div key={i}>{game.title}</div>;
-        })}
-      </div>
-    </section>
-  );
-};
+  {
+    type: "moCap",
+    title: "Hack Runner",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "...",
+  },
+  {
+    type: "moCap",
+    title: "An Epic Death",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "...",
+  },
+];

@@ -12,7 +12,7 @@ export const ExperienceSection = () => {
         {Experience.map((item, index) => {
           return (
             <div key={index} className="md:flex gap-[10px] md:gap-[80px] ">
-              <div className="whitespace-nowrap w-1/6  uppercase font-bold">
+              <div className="whitespace-nowrap w-1/6 text-ds-secondary-accent uppercase font-bold">
                 {item.timeFrame}
               </div>
               <div className=" flex flex-col w-5/6 gap-3">

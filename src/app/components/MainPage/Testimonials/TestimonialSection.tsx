@@ -14,7 +14,7 @@ export const TestimonialSection = () => {
           return (
             <div
               key={i}
-              className="flex flex-col bg-cyan-500 bg-opacity-20 p-4 rounded-xl w-2/3 gap-5"
+              className="flex flex-col bg-cyan-500 bg-opacity-20 p-4 rounded-xl md:w-2/3 gap-5"
             >
               <div className="flex gap-4 items-center">
                 <div

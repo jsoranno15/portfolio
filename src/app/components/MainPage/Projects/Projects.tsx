@@ -10,17 +10,7 @@ export const Projects = [
     coverImage: "everyworld",
     tags: ["React", "Next.js", "TailwindCSS"],
   },
-  {
-    type: "webDev",
-    title: "Food Share",
-    year: "2023",
-    link: "",
-    engine: "Unreal Engine 5 (2023)",
-    role: "Motion Capture Developer & Technical Designer",
-    blurb: "Combat-focused, third-person action game.",
-    coverImage: "foodshare",
-    tags: ["HTML", "MongoDB"],
-  },
+
   {
     type: "game",
     title: "Ember Point",
@@ -57,6 +47,7 @@ export const Projects = [
       "Assume the role of a mysterious frog who awakens in an unknown location with no recollection of their identity or past. To survive, players must confront their forgotten memories, solve intricate puzzles, and interact with mysterious characters to unravel the sinister truth lurking beneath the surface.",
     tags: ["Unity 2D", "C#", "Adobe PhotoShop"],
   },
+
   {
     type: "game",
     title: "King of the Colony",
@@ -93,5 +84,16 @@ export const Projects = [
       "Two individuals engage in a visceral battle to the death.  As the conflict unfolds within a stunningly detailed environment, the film encapsulates the raw power, tension, and ultimate fate of these combatants in a brief yet gripping cinematic experience.",
     coverImage: "anepicdeath",
     tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
+  },
+  {
+    type: "webDev",
+    title: "Food Share",
+    year: "2023",
+    link: "",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer & Technical Designer",
+    blurb: "Combat-focused, third-person action game.",
+    coverImage: "foodshare",
+    tags: ["HTML", "MongoDB"],
   },
 ];

@@ -20,7 +20,8 @@ const config: Config = {
         mono: ["var(--font-roboto-mono)"],
       },
       colors: {
-        "ds-main-accent": "#ff00ff",
+        "ds-main-accent": "#66FCF1",
+        "ds-secondary-accent": "#45A29E",
       },
     },
   },

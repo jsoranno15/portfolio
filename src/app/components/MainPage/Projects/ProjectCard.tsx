@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Arrow2Icon } from "../../icons";
 
 export const ProjectCard = ({
   title,
@@ -23,7 +24,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <div
-      className="bg-black bg-opacity-30 border-[1px] hover:shadow-lg  transition-all duration-100  border-white border-opacity-20 flex flex-col rounded-xl"
+      className="bg-[#12161e] border-[1px] hover:scale-105  transition-all duration-100  border-white border-opacity-20 flex flex-col rounded-xl"
       // style={{ boxShadow: "2px 2px 2px 2px rgb(0 0 0 / 20%)" }}
     >
       {coverImage && (
@@ -32,7 +33,7 @@ export const ProjectCard = ({
             <div className="h-[55px] w-[55px] border-[1px] border-black  bg-gray-400 aspect-square rounded-full"></div>
             <div className="flex flex-col">
               <span className="text-lg font-bold">{title}</span>
-              <div className="text-sm opacity-50">
+              <div className="text-sm  text-ds-secondary-accent">
                 {type} {year}
               </div>
             </div>
@@ -54,7 +55,7 @@ export const ProjectCard = ({
           <div className="text-gray-400 text-sm">{blurb}</div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <div className="grid grid-cols-3">
             <InfoBox text={"Duration"} data={"9 months"} />
             <InfoBox text={"Team Size"} data={"11"} />
@@ -70,7 +71,12 @@ export const ProjectCard = ({
                 </div>
               ))}
           </div>
-          <div className="text-sm mt-4">Visit LINK</div>
+          <div className="flex gap-2 items-center text-sm mt-4">
+            Visit LINK
+            <div className=" h-6 w-6 max-h-6 max-w-6 min-h-6 min-w-6">
+              <Arrow2Icon />
+            </div>
+          </div>
         </div>
       </section>
     </div>

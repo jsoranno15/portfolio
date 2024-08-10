@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export const ProjectCard = ({
   title,
   link,
   engine,
   role,
+  tags,
   blurb,
   type,
+  year,
+  coverImage,
 }: {
   title: string;
   link: string;
@@ -12,16 +17,71 @@ export const ProjectCard = ({
   role: string;
   blurb: string;
   type: string;
+  tags?: string[];
+  year?: string;
+  coverImage?: string;
 }) => {
   return (
-    <div className="bg-black bg-opacity-30 flex flex-col rounded-xl">
-      <div className="h-[150px] bg-gray-800 rounded-t-xl"></div>
-      <div className="flex  flex-col   p-4 rounded-b-xl bg-opacity-15">
-        <div className="font-bold ">{title}</div>
-        <div className="text-sm">{role}</div>
-        <div className="text-sm text-gray-400">{engine}</div>
-        <div className="text-sm ">{type}</div>
-      </div>
+    <div
+      className="bg-black bg-opacity-30 border-[1px] hover:shadow-lg  transition-all duration-100  border-white border-opacity-20 flex flex-col rounded-xl"
+      // style={{ boxShadow: "2px 2px 2px 2px rgb(0 0 0 / 20%)" }}
+    >
+      {coverImage && (
+        <div className="relative">
+          <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
+            <div className="h-[55px] w-[55px] border-[1px] border-black  bg-gray-400 aspect-square rounded-full"></div>
+            <div className="flex flex-col">
+              <span className="text-lg font-bold">{title}</span>
+              <div className="text-sm opacity-50">
+                {type} {year}
+              </div>
+            </div>
+          </div>
+
+          <Image
+            src={`/img/${coverImage}.webp`}
+            height={200}
+            width={200}
+            alt="Picture of the author"
+            className=" object-cover w-full h-[200px] rounded-t-xl"
+          ></Image>
+          <div className="absolute bg-gradient-to-t from-[#12161e] from-15% to-75%  w-full top-0 h-[200px]"></div>
+        </div>
+      )}
+      {/* Bottom ------------- Section */}
+      <section className="flex  flex-col gap-1  justify-between h-full p-4 rounded-b-xl bg-opacity-15">
+        <div className="flex flex-col gap-2 mb-4">
+          <div className="text-gray-400 text-sm">{blurb}</div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-3">
+            <InfoBox text={"Duration"} data={"9 months"} />
+            <InfoBox text={"Team Size"} data={"11"} />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {tags &&
+              tags.map((tag, i) => (
+                <div
+                  key={i}
+                  className=" whitespace-nowrap bg-ds-main-accent bg-opacity-5 text-ds-main-accent text-xs p-1 px-3 rounded-full"
+                >
+                  {tag}
+                </div>
+              ))}
+          </div>
+          <div className="text-sm mt-4">Visit LINK</div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+const InfoBox = ({ text, data }: { text: string; data: string }) => {
+  return (
+    <div className="flex flex-col whitespace-nowrap text-sm w-1/3">
+      <span className="text-gray-400">{text}</span>
+      <span className="">{data}</span>
     </div>
   );
 };

@@ -47,7 +47,7 @@ export const ProjectSection = () => {
       </div>
 
       <div
-        className={`grid gap-5  sm:grid-cols-2  ${
+        className={`grid gap-5  sm:grid-cols-3  ${
           fadeOut ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -57,6 +57,9 @@ export const ProjectSection = () => {
           visibleProjects.map((project: any, i: React.Key) => (
             <ProjectCard
               key={i}
+              tags={project.tags}
+              year={project.year}
+              coverImage={project.coverImage}
               title={project.title}
               link={project.link}
               engine={project.engine}

@@ -23,7 +23,7 @@ export const TestimonialSection = () => {
                    bg-gray-400"
                 >
                   <Image
-                    src={`/img/${item.image}.jpg`}
+                    src={`/img/testimonials/${item.image}.jpg`}
                     width={500}
                     height={500}
                     alt="Picture of the author"

@@ -28,7 +28,6 @@ export const ProjectCard = ({
   year: string;
   coverImage?: string;
 }) => {
-  const router = useRouter();
   return (
     <a
       className="bg-[#12161e] hover:scale-105 flex flex-col rounded-xl transition-all duration-200 
@@ -42,17 +41,19 @@ export const ProjectCard = ({
       {coverImage && (
         <div className="relative">
           <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
-            <div className="h-[55px] w-[55px] border-[1.5px] bg-black items-center flex justify-center  aspect-square rounded-full">
-              <div className="w-[40px] h-[40px] ">{icon}</div>
+            <div className="flex p-[1.5px] bg-gradient-to-b from-ds-main-accent to-[#EA00D9] rounded-full">
+              <div className="h-[55px] w-[55px]  bg-black items-center flex justify-center  aspect-square rounded-full">
+                <div className="w-[40px] h-[40px] ">{icon}</div>
+              </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold">{title}</span>
+              <span className="text-[22px] font-bold">{title}</span>
               <div className="text-sm  text-ds-secondary-accent">{role}</div>
             </div>
           </div>
 
           <Image
-            src={`/img/${coverImage}.webp`}
+            src={`/img/projects/${coverImage}.webp`}
             height={200}
             width={200}
             alt="Picture of the author"

@@ -17,12 +17,12 @@ export const ExperienceSection = () => {
             return (
               <div
                 key={index}
-                className="from-gray-800 z-[3] blur-2 bg-gradient-to-b rounded-xl p-[1px]"
+                className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
               >
-                <div className=" md:flex gap-[10px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-4 ">
-                  <div className="whitespace-nowrap flex flex-col  md:w-1/6  text-ds-secondary-accent uppercase font-bold">
-                    <div className="w-full h-full rounded-full items-center flex justify-center">
-                      <div className="bg-white p-1 rounded-full bg-gradient-to-b from-ds-main-accent to-[#EA00D9]">
+                <div className="flex-col flex md:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
+                  <div className="whitespace-nowrap  flex flex-col w-40  text-ds-secondary-accent uppercase font-bold">
+                    <div className="min-w-40 w-full h-full rounded-full items-center flex justify-center">
+                      <div className="bg-white p-[2px] rounded-full bg-gradient-to-b from-ds-main-accent to-[#EA00D9]">
                         <Image
                           src={`/img/experience/${item.image}`}
                           width={500}
@@ -34,7 +34,7 @@ export const ExperienceSection = () => {
                     </div>
                   </div>
 
-                  <div className=" flex flex-col md:w-5/6 gap-3">
+                  <div className=" flex flex-col 6 gap-3">
                     <div>
                       {item.link ? (
                         <a
@@ -44,7 +44,7 @@ export const ExperienceSection = () => {
                           className="flex text-xl gap-1 items-center font-bold transition-all duration-200 hover:text-ds-main-accent"
                         >
                           {item.title}
-                          <div className="h-5 w-5">
+                          <div className="h-7 min-h-7 min-w-7  w-7">
                             <ArrowIcon />
                           </div>
                         </a>

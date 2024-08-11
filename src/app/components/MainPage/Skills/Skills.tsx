@@ -17,7 +17,7 @@ export const SkillsSection = () => {
                   return (
                     <div key={i} className="flex flex-col gap-2 items-center">
                       <div
-                        className={`flex items-center justify-center p-2 rounded-xl bg-[#${skill.color}] bg-opacity-40 h-20 w-20`}
+                        className={`flex items-center justify-center p-3 rounded-xl bg-[#${skill.color}] bg-opacity-40 h-20 w-20`}
                       >
                         <Image
                           src={`/img/skills/${skill.image}.webp`}

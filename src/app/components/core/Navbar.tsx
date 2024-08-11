@@ -47,7 +47,7 @@ const Navbar = () => {
           href="/docs/soranno_resume2024.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-1 items-center  bg-ds-main-accent bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
+          className="flex gap-1 items-center hover:scale-110 transition-all duration-200 bg-ds-main-accent bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
         >
           Resume
           <div className="h-5 w-5">

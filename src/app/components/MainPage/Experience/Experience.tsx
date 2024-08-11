@@ -10,6 +10,7 @@ export const Experience = [
     ],
     skills: ["React.js ", "Next.js", "TypeScript", "TailwindCSS", "Zustand"],
     link: "https://www.everyworld.com/",
+    image: "everyrealm.jpg",
   },
   {
     timeFrame: "Aug 2022 — April 2023",
@@ -20,6 +21,7 @@ export const Experience = [
     ],
     skills: ["Management ", "Leadership", "Instructing"],
     link: "https://penguincodingschool.com/",
+    image: "pcs.jpg",
   },
   {
     timeFrame: "Sept 2019 — April 2023",
@@ -34,5 +36,6 @@ export const Experience = [
       "Operating Systems",
       "Software Engineering",
     ],
+    image: "nyu.jpg",
   },
 ];

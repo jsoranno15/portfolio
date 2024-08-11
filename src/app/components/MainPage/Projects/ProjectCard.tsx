@@ -1,12 +1,16 @@
 import Image from "next/image";
-import { Arrow2Icon } from "../../icons";
+import { useRouter } from "next/router";
+import { resolve } from "node:path/posix";
+import { ReactElement } from "react";
 
 export const ProjectCard = ({
   title,
   link,
   engine,
   role,
+  teamSize,
   tags,
+  icon,
   blurb,
   type,
   year,
@@ -15,27 +19,35 @@ export const ProjectCard = ({
   title: string;
   link: string;
   engine: string;
+  teamSize: string;
   role: string;
   blurb: string;
+  icon?: string;
   type: string;
   tags?: string[];
-  year?: string;
+  year: string;
   coverImage?: string;
 }) => {
+  const router = useRouter();
   return (
-    <div
-      className="bg-[#12161e] border-[1px] hover:scale-105  transition-all duration-100  border-white border-opacity-20 flex flex-col rounded-xl"
+    <a
+      className="bg-[#12161e] hover:scale-105 flex flex-col rounded-xl transition-all duration-100 
+        border-[1px]  border-white border-opacity-20 
+        hover:border-[1px] hover:border-ds-main-accent hover:shadow-md hover:shadow-ds-main-accent "
       // style={{ boxShadow: "2px 2px 2px 2px rgb(0 0 0 / 20%)" }}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {coverImage && (
         <div className="relative">
           <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
-            <div className="h-[55px] w-[55px] border-[1px] border-black  bg-gray-400 aspect-square rounded-full"></div>
+            <div className="h-[55px] w-[55px] border-[1px] bg-black items-center flex justify-center  aspect-square rounded-full">
+              <div className="w-[40px] h-[40px] ">{icon}</div>
+            </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold">{title}</span>
-              <div className="text-sm  text-ds-secondary-accent">
-                {type} {year}
-              </div>
+              <div className="text-sm  text-ds-secondary-accent">{role}</div>
             </div>
           </div>
 
@@ -57,8 +69,8 @@ export const ProjectCard = ({
 
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-3">
-            <InfoBox text={"Duration"} data={"9 months"} />
-            <InfoBox text={"Team Size"} data={"11"} />
+            <InfoBox text={"Year"} data={year} />
+            {teamSize && <InfoBox text={"Team Size"} data={teamSize} />}
           </div>
           <div className="flex flex-wrap gap-2">
             {tags &&
@@ -71,15 +83,15 @@ export const ProjectCard = ({
                 </div>
               ))}
           </div>
-          <div className="text-ds-main-accent flex uppercase gap-2 items-center text-sm mt-4">
+          {/* <div className="text-ds-main-accent flex uppercase gap-2 items-center text-sm mt-4">
             see project
             <div className=" h-6 w-6 max-h-6 max-w-6 min-h-6 min-w-6">
               <Arrow2Icon />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-    </div>
+    </a>
   );
 };
 

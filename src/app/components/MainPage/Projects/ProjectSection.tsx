@@ -4,8 +4,8 @@ import { Projects } from "./Projects";
 
 const typeLabels: Record<string, string> = {
   all: "All",
-  webDev: "Web Development",
-  game: "Game",
+  webDev: "Software",
+  game: "Games",
   moCap: "Motion Capture",
 };
 
@@ -57,7 +57,9 @@ export const ProjectSection = () => {
           visibleProjects.map((project: any, i: React.Key) => (
             <ProjectCard
               key={i}
+              teamSize={project.teamSize}
               tags={project.tags}
+              icon={project.icon}
               year={project.year}
               coverImage={project.coverImage}
               title={project.title}

@@ -26,7 +26,7 @@ const SkillObj = [
     description: "",
   },
   {
-    title: "Software Engineering",
+    title: "Motion Capture",
     subtitle: "React.js, Next.js, TypeScript, TailwindCSS",
     description: "",
   },

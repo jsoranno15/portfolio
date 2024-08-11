@@ -31,6 +31,10 @@ body {
   color: var(--text-color-dark);
 }
 
+.customShadow {
+  box-shadow: 0 0 10px #66fcf1;
+}
+
 body.light-mode {
   background-color: var(--background-color-light);
   color: var(--text-color-light);

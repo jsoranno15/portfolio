@@ -5,7 +5,7 @@ import { Projects } from "./Projects";
 const typeLabels: Record<string, string> = {
   all: "All",
   webDev: "Software",
-  game: "Games",
+  game: "Video Games",
   moCap: "Motion Capture",
 };
 

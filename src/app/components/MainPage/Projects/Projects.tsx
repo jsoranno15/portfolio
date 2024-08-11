@@ -5,6 +5,7 @@ import {
   ForkKnifeIcon,
   HTMLIcon,
   MicroChipIcon,
+  PersonIcon,
   SkeletonIcon,
   SkullAndBonesIcon,
   TeethIcon,
@@ -24,6 +25,20 @@ export const Projects = [
     coverImage: "everyworld",
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Zustand"],
   },
+  {
+    type: "webDev",
+    title: "Portfolio Website",
+    icon: <PersonIcon />,
+    year: "2024",
+    link: "/",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Frontend Developer",
+    teamSize: "1",
+    blurb:
+      "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
+    coverImage: "portfolio",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+  },
 
   {
     type: "game",
@@ -38,6 +53,34 @@ export const Projects = [
       "Ember Point is a combat-focused, third-person action game. Play as a disgraced defector from a militaristic mega-corporation, Gravitus, who is stuck cleaning up the terrible mess his former employers left behind — all while wielding a top-secret “cure” for a gruesome disease.",
     coverImage: "emberpoint",
     tags: ["UE5"],
+  },
+  {
+    coverImage: "hackrunner",
+    type: "moCap",
+    teamSize: "2",
+    year: "2023",
+    title: "Hack Runner",
+    icon: <MicroChipIcon />,
+    link: "https://www.youtube.com/watch?v=1jlmHrUacPI",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer",
+    blurb:
+      "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
+    tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
+  },
+  {
+    type: "webDev",
+    title: "Sodoku Solver",
+    teamSize: "1",
+    year: "2023",
+    icon: <HTMLIcon />,
+    link: "https://github.com/jsoranno15/Sudoku-Solver",
+    engine: "",
+    role: "Programmer",
+    blurb:
+      "A Sudoku puzzle solver designed using the backtracking algorithm to efficiently solve even the most difficult puzzles. This project highlights algorithmic problem-solving skills by exploring all potential configurations to find valid solutions.",
+    coverImage: "sudokusolver",
+    tags: ["Python", "CLI"],
   },
   {
     coverImage: "escapethecatacombs",
@@ -67,20 +110,7 @@ export const Projects = [
       " A visual-novel horror game where you play as a mysterious frog with no memory, navigating an eerie village that feels hauntingly familiar. Uncover dark secrets, solve puzzles, and confront forgotten memories to survive the sinister atmosphere surrounding shadowy frogs and unravel the chilling truth.",
     tags: ["Unity 2D", "C#", "Adobe PhotoShop"],
   },
-  {
-    type: "webDev",
-    title: "Sodoku Solver",
-    teamSize: "1",
-    year: "2023",
-    icon: <HTMLIcon />,
-    link: "https://github.com/jsoranno15/Sudoku-Solver",
-    engine: "",
-    role: "Programmer",
-    blurb:
-      "A Sudoku puzzle solver designed using the backtracking algorithm to efficiently solve even the most difficult puzzles. This project highlights algorithmic problem-solving skills by exploring all potential configurations to find valid solutions.",
-    coverImage: "sudokusolver",
-    tags: ["Python", "CLI"],
-  },
+
   {
     type: "game",
     title: "King of the Colony",
@@ -110,20 +140,7 @@ export const Projects = [
     coverImage: "anepicdeath",
     tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
   },
-  {
-    coverImage: "hackrunner",
-    type: "moCap",
-    teamSize: "2",
-    year: "2023",
-    title: "Hack Runner",
-    icon: <MicroChipIcon />,
-    link: "https://www.youtube.com/watch?v=1jlmHrUacPI",
-    engine: "Unreal Engine 5 (2023)",
-    role: "Motion Capture Developer",
-    blurb:
-      "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
-    tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
-  },
+
   {
     type: "webDev",
     title: "Food Share",

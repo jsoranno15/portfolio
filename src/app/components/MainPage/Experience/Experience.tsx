@@ -26,10 +26,13 @@ export const Experience = [
     title: "New York University — Tandon School of Engineering",
     subtitle: "B.S. Computer Science, Minor in Game Engineering",
     skills: [
-      "Algorithms",
-      "Data Structures",
+      "Design & Analysis of Algorithms",
       "Game Development",
       "3D Animation",
+      "Artifical Intelligence",
+      "Motion Capture",
+      "Operating Systems",
+      "Software Engineering",
     ],
   },
 ];

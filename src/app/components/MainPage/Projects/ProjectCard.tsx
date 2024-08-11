@@ -42,7 +42,7 @@ export const ProjectCard = ({
       {coverImage && (
         <div className="relative">
           <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
-            <div className="h-[55px] w-[55px] border-[1px] bg-black items-center flex justify-center  aspect-square rounded-full">
+            <div className="h-[55px] w-[55px] border-[1.5px] bg-black items-center flex justify-center  aspect-square rounded-full">
               <div className="w-[40px] h-[40px] ">{icon}</div>
             </div>
             <div className="flex flex-col">

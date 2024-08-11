@@ -31,7 +31,7 @@ export const ProjectCard = ({
   const router = useRouter();
   return (
     <a
-      className="bg-[#12161e] hover:scale-105 flex flex-col rounded-xl transition-all duration-100 
+      className="bg-[#12161e] hover:scale-105 flex flex-col rounded-xl transition-all duration-200 
         border-[1px]  border-white border-opacity-20 
         hover:border-[1px] hover:border-ds-main-accent hover:shadow-md hover:shadow-ds-main-accent "
       // style={{ boxShadow: "2px 2px 2px 2px rgb(0 0 0 / 20%)" }}
@@ -56,7 +56,7 @@ export const ProjectCard = ({
             height={200}
             width={200}
             alt="Picture of the author"
-            className=" object-cover w-full h-[200px] rounded-t-xl"
+            className=" object-cover  h-[200px] w-full rounded-t-xl"
           ></Image>
           <div className="absolute bg-gradient-to-t from-[#12161e] from-15% to-75%  w-full top-0 h-[200px]"></div>
         </div>

@@ -9,13 +9,15 @@ import { SkillsSection } from "./Skills/Skills";
 const MainPage = () => {
   return (
     <PrimaryLayout>
-      <main className="flex flex-col p-4 sm:px-[48px] ">
-        <SplashBlurb />
-        <AboutSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectSection />
-        <TestimonialSection />
+      <main className="">
+        <div className="flex flex-col p-4 sm:px-[48px] ">
+          <SplashBlurb />
+          <AboutSection />
+          <ExperienceSection />
+          <SkillsSection />
+          <ProjectSection />
+          <TestimonialSection />
+        </div>
       </main>
     </PrimaryLayout>
   );

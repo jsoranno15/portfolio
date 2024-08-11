@@ -62,12 +62,25 @@ export const Projects = [
     title: "Shadow Frog",
     link: "https://billiton.itch.io/shadow-frog",
     engine: "Unreal Engine 5 (2023)",
-    role: "Narrative and Game Artist",
+    role: "Narrative Designer and Game Artist",
     blurb:
       " A visual-novel horror game where you play as a mysterious frog with no memory, navigating an eerie village that feels hauntingly familiar. Uncover dark secrets, solve puzzles, and confront forgotten memories to survive the sinister atmosphere surrounding shadowy frogs and unravel the chilling truth.",
     tags: ["Unity 2D", "C#", "Adobe PhotoShop"],
   },
-
+  {
+    type: "webDev",
+    title: "Sodoku Solver",
+    teamSize: "1",
+    year: "2023",
+    icon: <HTMLIcon />,
+    link: "https://github.com/jsoranno15/Sudoku-Solver",
+    engine: "",
+    role: "Programmer",
+    blurb:
+      "A Sudoku puzzle solver designed using the backtracking algorithm to efficiently solve even the most difficult puzzles. This project highlights algorithmic problem-solving skills by exploring all potential configurations to find valid solutions.",
+    coverImage: "sudokusolver",
+    tags: ["Python", "CLI"],
+  },
   {
     type: "game",
     title: "King of the Colony",
@@ -76,27 +89,13 @@ export const Projects = [
     link: "https://juju136.itch.io/king-of-the-colony",
     year: "2023",
     engine: "Unreal Engine 5 (2023)",
-    role: "Motion Capture Developer & Technical Designer",
+    role: "Technical Designer",
     blurb:
-      "Assuming the role of a human disguised as a rat, you embark on a mission to undermine the activities of a rat colony thriving beneath your city. Through a blend of time management and inventive puzzle-solving, players navigate a small subterranean world while uncovering the unforeseen repercussions of emerging urban policies.",
+      "As a human disguised as a rat, you infiltrate a rat colony beneath the city to thwart their activities. Using time management and inventive puzzle-solving, navigate a subterranean world and uncover the surprising effects of new urban policies.",
     coverImage: "kingofthecolony",
     tags: ["Unity 2D", "C#"],
   },
 
-  {
-    coverImage: "hackrunner",
-    type: "moCap",
-    teamSize: "2",
-    year: "2023",
-    title: "Hack Runner",
-    icon: <MicroChipIcon />,
-    link: "https://www.youtube.com/watch?v=1jlmHrUacPI",
-    engine: "Unreal Engine 5 (2023)",
-    role: "Motion Capture Developer",
-    blurb:
-      "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
-    tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
-  },
   {
     type: "moCap",
     year: "2023",
@@ -112,6 +111,20 @@ export const Projects = [
     tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
   },
   {
+    coverImage: "hackrunner",
+    type: "moCap",
+    teamSize: "2",
+    year: "2023",
+    title: "Hack Runner",
+    icon: <MicroChipIcon />,
+    link: "https://www.youtube.com/watch?v=1jlmHrUacPI",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Motion Capture Developer",
+    blurb:
+      "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
+    tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
+  },
+  {
     type: "webDev",
     title: "Food Share",
     icon: <ForkKnifeIcon />,
@@ -121,22 +134,8 @@ export const Projects = [
     engine: "Unreal Engine 5 (2023)",
     role: "Lead Frontend Developer",
     blurb:
-      "A dashboard-style system for managing food pantry operations, including inventory, donations, and distributions. It streamlines tasks and enhances efficiency.",
+      "A sleek, dashboard-style system designed to optimize food pantry operations. It efficiently manages inventory, tracks donations, and coordinates distributions, simplifying administrative tasks and boosting overall efficiency.",
     coverImage: "foodshare",
     tags: ["HTML", "PostgreSQL", "sqlAlchemy"],
-  },
-  {
-    type: "webDev",
-    title: "Sodoku Solver",
-    teamSize: "1",
-    year: "2023",
-    icon: <HTMLIcon />,
-    link: "https://github.com/jsoranno15/Sudoku-Solver",
-    engine: "",
-    role: "Programmer",
-    blurb:
-      "A Sudoku puzzle solver designed using the backtracking algorithm to efficiently solve even the most difficult puzzles. This project highlights algorithmic problem-solving skills by exploring all potential configurations to find valid solutions.",
-    coverImage: "sudokusolver",
-    tags: ["Python", "CLI"],
   },
 ];

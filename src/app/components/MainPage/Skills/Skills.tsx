@@ -6,9 +6,9 @@ export const SkillsSection = () => {
     >
       <div className="text-6xl">Skills</div>
       <div className="flex flex-col gap-4">
-        {SkillObj.map((item) => {
+        {SkillObj.map((item, i) => {
           return (
-            <div key="item" className="">
+            <div key={i} className="">
               <div className="text-[20px]">{item.title}</div>
               <div>{item.subtitle}</div>
             </div>

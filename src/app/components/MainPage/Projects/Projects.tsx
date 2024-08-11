@@ -8,7 +8,7 @@ export const Projects = [
     role: "Motion Capture Developer & Technical Designer",
     blurb: "Combat-focused, third-person action game.",
     coverImage: "everyworld",
-    tags: ["React", "Next.js", "TailwindCSS"],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Zustand"],
   },
 
   {

@@ -71,8 +71,8 @@ export const ProjectCard = ({
                 </div>
               ))}
           </div>
-          <div className="flex gap-2 items-center text-sm mt-4">
-            Visit LINK
+          <div className="text-ds-main-accent flex uppercase gap-2 items-center text-sm mt-4">
+            see project
             <div className=" h-6 w-6 max-h-6 max-w-6 min-h-6 min-w-6">
               <Arrow2Icon />
             </div>

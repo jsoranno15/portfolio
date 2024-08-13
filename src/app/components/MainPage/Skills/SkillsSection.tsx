@@ -6,26 +6,29 @@ export const SkillsSection = () => {
   return (
     <section
       id="section-skills"
-      className="flex  items-center min-h-[100vh] justify-center w-full flex-col gap-5 "
+      className="flex relative items-center min-h-[100vh] justify-center w-full flex-col gap-5 "
     >
+      {/* <div className="absolute bg-[#12161e]  aspect-square w-[90vh] rounded-full blur-3xl z-[-2]" /> */}
       <SectionHeader text={"Skills"} />
-      <div className="w-full  grid md:flex md:flex-col gap-12">
+      <div className="w-full relative grid md:flex md:flex-col gap-12">
         {SkillObj.map((item, i) => {
           return (
             <div
               key={i}
               className="flex flex-col  gap-3 items-center justify-center"
             >
-              <div className="text-[20px] ">{item.title}</div>
+              <div className="text-lg text-ds-secondary-accent sm:text-[20px] font-semibold">
+                {item.title}
+              </div>
               <div className={`flex justify-center flex-wrap gap-3 `}>
                 {item.skills.map((skill, i) => {
                   return (
                     <div
                       key={i}
-                      className="flex flex-col gap-2 items-center w-[100px] md:w-[120px] text-center "
+                      className="flex flex-col text-gray-400 gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
                     >
                       <div
-                        className={`flex items-center  justify-center p-2 rounded-xl  bg-opacity-40 h-[100px] w-[100px]`}
+                        className={`flex items-center  justify-center p-2 rounded-xl  bg-opacity-40 h-[60px] w-[60px] sm:h-[100px] sm:w-[100px]`}
                         style={{
                           // backgroundColor: `#${skill.color}50`,
                           background: `linear-gradient( #${skill.color}60, #12161e);`,

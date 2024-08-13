@@ -15,41 +15,39 @@ export const TestimonialSection = () => {
           return (
             <div
               key={i}
-              className="flex flex-col  bg-opacity-20 p-4 rounded-xl  gap-5"
+              className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
             >
-              <div className="flex gap-4 items-center">
-                <div
-                  className="aspect-square rounded-full h-[60px] w-[60px]
-                  min-h-[60px] min-w-[60px]
-                   bg-gray-400"
-                >
-                  <Image
-                    src={`/img/testimonials/${item.image}.jpg`}
-                    width={500}
-                    height={500}
-                    alt="Picture of the author"
-                    className="border object-contain rounded-full"
-                  ></Image>
-                </div>
-                <div className="flex flex-col">
-                  <div className="font-bold text-lg">{item.name}</div>
+              <div className="flex flex-col bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  bg-opacity-20 p-4 rounded-xl  gap-5">
+                <div className="flex gap-4 items-center">
                   <div
-                    className="text-sm text-ds-main-accent bg-ds-main-accent bg-opacity-5
-                w-fit rounded-full py-1 px-3"
+                    className="aspect-square rounded-full h-[60px] w-[60px]
+                  min-h-[60px] min-w-[60px] p-[1.5px] bg-gradient-to-b from-ds-main-accent to-[#EA00D9]"
                   >
-                    {item.company}
+                    <Image
+                      src={`/img/testimonials/${item.image}.jpg`}
+                      width={500}
+                      height={500}
+                      alt="Picture of the author"
+                      className=" object-contain rounded-full"
+                    ></Image>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="font-bold text-lg">{item.name}</div>
+                    <div className="text-base text-ds-secondary-accent">
+                      {item.company}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex gap-3 h-full">
-                <div className="flex h-4 w-4">
-                  <QuoteIcon />
-                </div>
-                {item.paragraphs}
-                <div className="flex items-end">
-                  <div className="flex h-4 w-4 rotate-180 ">
+                <div className="flex gap-3 h-full">
+                  <div className="flex h-4 w-4">
                     <QuoteIcon />
+                  </div>
+                  {item.paragraphs}
+                  <div className="flex items-end">
+                    <div className="flex h-4 w-4 rotate-180 ">
+                      <QuoteIcon />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -32,16 +32,16 @@ export const ProjectSection = () => {
   return (
     <section
       id="section-projects"
-      className="flex flex-col items-center py-[40px] gap-5 "
+      className="flex flex-col items-center py-[40px] sm:gap-5 "
     >
       <SectionHeader text={"Projects"} />
 
-      <div className="flex flex-wrap gap-2  mb-6">
+      <div className="flex flex-wrap gap-2 mb-6">
         {["all", "webDev", "game", "moCap"].map((type) => (
           <button
             key={type}
             onClick={() => handleFilterChange(type)}
-            className={`p-2 text-lg transition-all duration-150 ${
+            className={`p-2 text-sm sm:text-lg transition-all duration-150 ${
               selectedType === type ? "text-ds-main-accent" : ""
             }`}
           >

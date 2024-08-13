@@ -47,7 +47,7 @@ export const ProjectCard = ({
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-[22px] font-bold">{title}</span>
+              <span className="text-[22px] font-bold break">{title}</span>
               <div className="text-sm  text-ds-secondary-accent">{role}</div>
             </div>
           </div>

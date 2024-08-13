@@ -20,7 +20,7 @@ export const ExperienceSection = () => {
                 key={index}
                 className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
               >
-                <div className="flex-col flex lg:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
+                <div className="flex-col flex md:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
                   <ImageHeader image={item.image} />
 
                   <div className=" flex flex-col 6 gap-3">
@@ -30,7 +30,7 @@ export const ExperienceSection = () => {
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex text-xl gap-1 items-center font-bold transition-all duration-200 hover:text-ds-main-accent"
+                          className="flex sm:text-xl gap-1 items-center font-bold transition-all duration-200 hover:text-ds-main-accent"
                         >
                           {item.title}
                           <div className="h-7 min-h-7 min-w-7  w-7">
@@ -38,29 +38,31 @@ export const ExperienceSection = () => {
                           </div>
                         </a>
                       ) : (
-                        <div className="flex flex-col text-xl font-bold  ">
-                          {item.title}
-                          <span className="text-ds-secondary-accent text-base font-normal">
+                        <div className="flex flex-col  gap-1 ">
+                          <div className="sm:text-xl font-bold">
+                            {item.title}
+                          </div>
+                          <span className="text-ds-secondary-accent text-sm sm:text-base font-normal">
                             {item.timeFrame}
                           </span>
-                          <div className="text-gray-400 text-base backdrop:font-normal">
+                          <div className="text-gray-400  backdrop:font-normal">
                             {item.subtitle}
                           </div>
                         </div>
                       )}
 
                       {item.link && (
-                        <span className="text-ds-secondary-accent">
+                        <span className="text-ds-secondary-accent text-sm sm:text-base">
                           {item.timeFrame}
                         </span>
                       )}
                     </div>
 
                     {item.points && (
-                      <div className="flex flex-col ml-4">
+                      <div className="flex flex-col ml-4 text-sm sm:text-base text-gray-400 ">
                         {item.points.map((point, i) => (
                           <div key={i} className="flex gap-2 items-start ">
-                            <span className="inline-block mt-2 min-w-1.5 min-h-1.5 h-1.5 w-1.5 bg-white rounded-full"></span>
+                            <span className=" inline-block mt-2 min-w-1.5 min-h-1.5 h-1.5 w-1.5 bg-white rounded-full"></span>
                             {point}
                           </div>
                         ))}
@@ -71,7 +73,7 @@ export const ExperienceSection = () => {
                         {item.skills.map((skill, i) => (
                           <div
                             key={i}
-                            className="bg-ds-main-accent bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
+                            className="bg-ds-main-accent text-xs sm:text-base bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
                           >
                             {skill}
                           </div>

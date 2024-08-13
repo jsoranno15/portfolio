@@ -43,17 +43,20 @@ const Navbar = () => {
             {item.name}
           </a>
         ))}
-        <a
-          href="/docs/soranno_resume2024.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex gap-1 items-center hover:scale-110 transition-all duration-200 bg-ds-main-accent bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
-        >
-          Resume
-          <div className="h-5 w-5">
-            <ArrowIcon />
-          </div>
-        </a>
+        <div className="from-gray-800 bg-gradient-to-b 0 p-[1.5px] rounded-full">
+          <a
+            href="/docs/soranno_resume2024.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-1 items-center hover:scale-110 transition-all duration-200 
+            bg-gradient-to-br from-ds-secondary-accent  to-[#EA00D9] from-30%  p-1 px-4 rounded-full"
+          >
+            Resume
+            <div className="h-5 w-5">
+              <ArrowIcon />
+            </div>
+          </a>
+        </div>
         {/* <DarkModeToggle /> */}
       </div>
     </nav>

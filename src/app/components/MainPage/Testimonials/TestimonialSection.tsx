@@ -1,3 +1,4 @@
+import { SectionHeader } from "../../core/SectionHeader";
 import { QuoteIcon } from "../../icons";
 import { Testimonials } from "./Testimonial";
 import Image from "next/image";
@@ -6,15 +7,15 @@ export const TestimonialSection = () => {
   return (
     <section
       id="section-testimonials"
-      className="flex py-[40px]  flex-col gap-8 "
+      className="flex py-[40px] items-center w-full  flex-col gap-8 "
     >
-      <div className="text-xl md:text-6xl">Testimonials</div>
+      <SectionHeader text={"Testimonials"} />
       <div className="flex flex-col gap-20 ">
         {Testimonials.map((item, i) => {
           return (
             <div
               key={i}
-              className="flex flex-col  bg-opacity-20 p-4 rounded-xl md:w-2/3 gap-5"
+              className="flex flex-col  bg-opacity-20 p-4 rounded-xl  gap-5"
             >
               <div className="flex gap-4 items-center">
                 <div

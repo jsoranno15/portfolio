@@ -25,20 +25,20 @@ export const Projects = [
     coverImage: "everyworld",
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Zustand"],
   },
-  {
-    type: "webDev",
-    title: "Portfolio Website",
-    icon: <PersonIcon />,
-    year: "2024",
-    link: "/",
-    engine: "Unreal Engine 5 (2023)",
-    role: "Frontend Developer",
-    teamSize: "1",
-    blurb:
-      "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
-    coverImage: "portfolio",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
-  },
+  // {
+  //   type: "webDev",
+  //   title: "Portfolio Website",
+  //   icon: <PersonIcon />,
+  //   year: "2024",
+  //   link: "/",
+  //   engine: "Unreal Engine 5 (2023)",
+  //   role: "Frontend Developer",
+  //   teamSize: "1",
+  //   blurb:
+  //     "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
+  //   coverImage: "portfolio",
+  //   tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+  // },
 
   {
     type: "game",

@@ -1,13 +1,14 @@
+import { SectionHeader } from "../../core/SectionHeader";
 import { ArrowIcon } from "../../icons";
 import { Experience } from "./Experience";
-import Image from "next/image";
+import { ImageHeader } from "./SectionComponents/ImageHeader";
 export const ExperienceSection = () => {
   return (
     <section
       id="section-exp"
-      className="flex flex-col py-[40px] gap-5 min-h-[500px]"
+      className="flex flex-col py-[40px] items-center gap-5 min-h-[500px]"
     >
-      <div className="text-xl md:text-6xl">Experience</div>
+      <SectionHeader text={"Experience"} />
       <div className="flex gap-[200px] items-center">
         {/* <div className="w-[600px] blur-3xl z-[0] relative ">
           <div className="aspect-ratio-square z-[-2] absolute translate-x-20 -translate-y-[200px] bg-[#EA00D930] h-[300px] w-[400px] rounded-full"></div>
@@ -19,20 +20,8 @@ export const ExperienceSection = () => {
                 key={index}
                 className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
               >
-                <div className="flex-col flex md:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
-                  <div className="whitespace-nowrap  flex flex-col w-40  text-ds-secondary-accent uppercase font-bold">
-                    <div className="min-w-40 w-full h-full rounded-full items-center flex justify-center">
-                      <div className="bg-white p-[2px] rounded-full bg-gradient-to-b from-ds-main-accent to-[#EA00D9]">
-                        <Image
-                          src={`/img/experience/${item.image}`}
-                          width={500}
-                          height={500}
-                          alt=""
-                          className="object-contain min-h-40 min-w-40 max-w-40 max-h-40 rounded-full "
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <div className="flex-col flex lg:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
+                  <ImageHeader image={item.image} />
 
                   <div className=" flex flex-col 6 gap-3">
                     <div>

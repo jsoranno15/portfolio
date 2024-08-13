@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { Projects } from "./Projects";
+import { SectionHeader } from "../../core/SectionHeader";
 
 const typeLabels: Record<string, string> = {
   all: "All",
@@ -29,15 +30,18 @@ export const ProjectSection = () => {
   }, [selectedType]);
 
   return (
-    <section id="section-projects" className="flex flex-col py-[40px] gap-5 ">
-      <div className="text-xl md:text-6xl">Projects</div>
+    <section
+      id="section-projects"
+      className="flex flex-col items-center py-[40px] gap-5 "
+    >
+      <SectionHeader text={"Projects"} />
 
       <div className="flex flex-wrap gap-2  mb-6">
         {["all", "webDev", "game", "moCap"].map((type) => (
           <button
             key={type}
             onClick={() => handleFilterChange(type)}
-            className={`p-2 transition-all duration-150 ${
+            className={`p-2 text-lg transition-all duration-150 ${
               selectedType === type ? "text-ds-main-accent" : ""
             }`}
           >
@@ -47,7 +51,7 @@ export const ProjectSection = () => {
       </div>
 
       <div
-        className={`grid gap-6  sm:grid-cols-2 lg:grid-cols-3  ${
+        className={`grid gap-6  md:grid-cols-2  xl:grid-cols-3  ${
           fadeOut ? "opacity-0" : "opacity-100"
         }`}
       >

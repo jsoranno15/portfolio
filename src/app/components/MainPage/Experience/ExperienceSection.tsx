@@ -1,5 +1,5 @@
 import { SectionHeader } from "../../core/SectionHeader";
-import { ArrowIcon } from "../../icons";
+import { ArrowIcon, CalendarIcon } from "../../icons";
 import { Experience } from "./Experience";
 import { ImageHeader } from "./SectionComponents/ImageHeader";
 export const ExperienceSection = () => {
@@ -42,7 +42,10 @@ export const ExperienceSection = () => {
                           <div className="sm:text-xl font-bold">
                             {item.title}
                           </div>
-                          <span className="text-ds-secondary-accent text-sm sm:text-base font-normal">
+                          <span className="text-ds-secondary-accent flex gap-1 items-center text-sm sm:text-base font-normal">
+                            <div className="flex h-4 w-4">
+                              <CalendarIcon />
+                            </div>
                             {item.timeFrame}
                           </span>
                           <div className="text-gray-400  backdrop:font-normal">
@@ -52,7 +55,10 @@ export const ExperienceSection = () => {
                       )}
 
                       {item.link && (
-                        <span className="text-ds-secondary-accent text-sm sm:text-base">
+                        <span className="text-ds-secondary-accent flex gap-1 items-center text-sm sm:text-base">
+                          <div className="flex h-4 w-4">
+                            <CalendarIcon />
+                          </div>
                           {item.timeFrame}
                         </span>
                       )}

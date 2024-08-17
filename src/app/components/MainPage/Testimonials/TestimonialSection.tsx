@@ -10,7 +10,7 @@ export const TestimonialSection = () => {
       className="flex py-[40px] items-center w-full  flex-col gap-8 "
     >
       <SectionHeader text={"Testimonials"} />
-      <div className="flex flex-col gap-20 ">
+      <div className="flex flex-col gap-8 sm:gap-20 ">
         {Testimonials.map((item, i) => {
           return (
             <div

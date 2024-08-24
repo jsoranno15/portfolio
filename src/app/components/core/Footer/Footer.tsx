@@ -59,7 +59,17 @@ const Footer = () => {
             and <span className="text-ds-secondary-accent">TailwindCSS</span>
           </div>
 
-          <div className="font-normal">© 2024 Juliana Soranno</div>
+          <div className=" flex items-center gap-1 justify-center">
+            Deployed on{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://vercel.com/"
+            >
+              Vercel{" "}
+            </a>
+          </div>
+          <div className="font-normal pt-2">© 2024 Juliana Soranno</div>
         </div>
       </div>
     </section>

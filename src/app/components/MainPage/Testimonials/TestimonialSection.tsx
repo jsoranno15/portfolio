@@ -17,7 +17,7 @@ export const TestimonialSection = () => {
               key={i}
               className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
             >
-              <div className="flex flex-col bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  bg-opacity-20 p-4 rounded-xl  gap-5">
+              <div className="flex flex-col bg-[#12161e] py-6 p-4 rounded-xl  gap-5">
                 <div className="flex gap-4 items-center">
                   <div
                     className="aspect-square rounded-full h-[60px] w-[60px]

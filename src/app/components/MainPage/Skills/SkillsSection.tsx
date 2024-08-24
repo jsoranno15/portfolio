@@ -30,8 +30,8 @@ export const SkillsSection = () => {
                       <div
                         className={`flex items-center  justify-center p-2 rounded-xl  bg-opacity-40 h-[60px] w-[60px] sm:h-[100px] sm:w-[100px]`}
                         style={{
-                          // backgroundColor: `#${skill.color}50`,
-                          background: `linear-gradient( #${skill.color}60, #12161e);`,
+                          // backgroundColor: `#${skill.color}70`,
+                          background: `linear-gradient( #${skill.color}80, #${skill.color}70);`,
                         }}
                       >
                         <Image

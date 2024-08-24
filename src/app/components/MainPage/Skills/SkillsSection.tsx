@@ -10,7 +10,7 @@ export const SkillsSection = () => {
     >
       {/* <div className="absolute bg-[#12161e]  aspect-square w-[90vh] rounded-full blur-3xl z-[-2]" /> */}
       <SectionHeader text={"Skills"} />
-      <div className="w-full relative grid md:flex md:flex-col gap-12">
+      <div className="w-full relative grid md:flex md:flex-col gap-4 md:gap-12">
         {SkillObj.map((item, i) => {
           return (
             <div

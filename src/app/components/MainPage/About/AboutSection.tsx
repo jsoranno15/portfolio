@@ -10,11 +10,14 @@ export const AboutSection = () => {
       <div className="w-full  justify-center flex">
         <div className="flex flex-col font-medium text-gray-400 text-justify gap-3 md:w-2/3">
           <span>
-            As a Full Stack Engineer with a unique background in video games and
-            technical design, I&apos;ve spent the last four years honing my
-            skills in Web3 and AI technologies. Based in New York City, I
-            specialize in crafting responsive and intuitive user interfaces
-            using{" "}
+            As a{" "}
+            <span className="text-ds-main-accent font-bold">
+              Full Stack Engineer
+            </span>{" "}
+            with a unique background in video games and technical design,
+            I&apos;ve spent the last four years honing my skills in Web3 and AI
+            technologies. Based in New York City, I specialize in crafting
+            responsive and intuitive user interfaces using{" "}
             <span className="text-ds-main-accent font-bold">
               {" "}
               Next.js, React, TypeScript, Zustand, and Tailwind CSS.

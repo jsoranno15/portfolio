@@ -17,6 +17,6 @@ export const FooterComponents = [
   {
     name: "ArtStation",
     link: "https://www.artstation.com/julianasoranno",
-    logo: "artstationLogo.png",
+    logo: "artstationlogo.webp",
   },
 ];

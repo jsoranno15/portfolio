@@ -20,7 +20,7 @@ export const ExperienceSection = () => {
                 key={index}
                 className="from-gray-800 z-[3]  blur-2 bg-gradient-to-b rounded-xl p-[1px]"
               >
-                <div className="flex-col flex md:flex-row gap-4 md:gap-[30px]   bg-gradient-to-br from-[#12161e]  from-75% to-[#271029]  rounded-xl py-6 p-6 ">
+                <div className="flex-col flex md:flex-row gap-4 md:gap-[30px]   bg-gradient-to-t from-[#12161e]  from-65% to-[#66FCF110]  rounded-xl py-6 p-6 ">
                   <ImageHeader image={item.image} />
 
                   <div className=" flex flex-col 6 gap-3">
@@ -48,44 +48,27 @@ export const ExperienceSection = () => {
                             </div>
                             {item.timeFrame}
                           </span>
-                          <div className="text-gray-400  backdrop:font-normal">
-                            {item.subtitle}
-                          </div>
                         </div>
                       )}
-
-                      {item.link && (
-                        <span className="text-ds-secondary-accent flex gap-1 items-center text-sm sm:text-base">
-                          <div className="flex h-4 w-4">
-                            <CalendarIcon />
-                          </div>
-                          {item.timeFrame}
-                        </span>
-                      )}
                     </div>
-
-                    {item.points && (
-                      <div className="flex flex-col ml-4 text-sm sm:text-base text-gray-400 ">
-                        {item.points.map((point, i) => (
-                          <div key={i} className="flex gap-2 items-start ">
-                            <span className=" inline-block mt-2 min-w-1.5 min-h-1.5 h-1.5 w-1.5 bg-white rounded-full"></span>
-                            {point}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    {item.skills && (
-                      <div className="flex flex-wrap gap-2">
-                        {item.skills.map((skill, i) => (
-                          <div
-                            key={i}
-                            className="bg-ds-main-accent text-xs sm:text-base bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
-                          >
-                            {skill}
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                    <div className="flex flex-col ml-4 text-sm sm:text-base text-gray-400 ">
+                      {item.points.map((point, i) => (
+                        <div key={i} className="flex gap-2 items-start ">
+                          <span className=" inline-block mt-2 min-w-1.5 min-h-1.5 h-1.5 w-1.5 bg-white rounded-full"></span>
+                          {point}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {item.skills.map((skill, i) => (
+                        <div
+                          key={i}
+                          className="bg-ds-main-accent text-xs sm:text-base bg-opacity-5 text-ds-main-accent p-1 px-3 rounded-full"
+                        >
+                          {skill}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

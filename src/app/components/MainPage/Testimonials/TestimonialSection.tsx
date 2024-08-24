@@ -40,12 +40,12 @@ export const TestimonialSection = () => {
                 </div>
 
                 <div className="flex gap-3 h-full">
-                  <div className="flex h-4 w-4">
+                  <div className="flex h-4 w-4 min-w-4 max-w-4 min-h-4 max-h-4">
                     <QuoteIcon />
                   </div>
                   {item.paragraphs}
                   <div className="flex items-end">
-                    <div className="flex h-4 w-4 rotate-180 ">
+                    <div className="flex h-4 w-4 min-w-4 max-w-4 min-h-4 max-h-4 rotate-180 ">
                       <QuoteIcon />
                     </div>
                   </div>

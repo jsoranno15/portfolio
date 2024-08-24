@@ -34,19 +34,13 @@ export const SkillsSection = () => {
                           background: `linear-gradient( #${skill.color}60, #12161e);`,
                         }}
                       >
-                        {skill.image ? (
-                          <Image
-                            src={`/img/skills/${skill.image}`}
-                            width={500}
-                            height={500}
-                            alt=""
-                            className=""
-                          ></Image>
-                        ) : (
-                          <div className="h-[100px] w-[100px] flex items-center justify-center">
-                            {skill.icon}
-                          </div>
-                        )}
+                        <Image
+                          src={`/img/skills/${skill.image}`}
+                          width={500}
+                          height={500}
+                          alt=""
+                          className=""
+                        ></Image>
                       </div>
                       {skill.name}
                     </div>

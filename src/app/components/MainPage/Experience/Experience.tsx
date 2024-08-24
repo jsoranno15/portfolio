@@ -26,7 +26,10 @@ export const Experience = [
   {
     timeFrame: "Sept 2019 — April 2023",
     title: "New York University — Tandon School of Engineering",
-    subtitle: "B.S. Computer Science, Minor in Game Engineering",
+    points: [
+      "Bachelor's of Science in Computer Science, Minor in Game Engineering",
+      "Dean's List 2024",
+    ],
     skills: [
       "Design & Analysis of Algorithms",
       "Game Development",

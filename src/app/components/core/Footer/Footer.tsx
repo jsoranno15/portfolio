@@ -25,7 +25,7 @@ const Footer = () => {
                     height={200}
                     width={200}
                     alt="Picture of the author"
-                    className=" object-cover transition-all duration-200 hover:scale-110 h-[40px] md:h-[80px] w-full rounded-t-xl"
+                    className=" object-cover transition-all duration-200 hover:scale-110 h-10 w-10 md:h-[80px]  rounded-t-xl"
                   ></Image>
                   {item.name}
                 </a>
@@ -44,7 +44,7 @@ const Footer = () => {
               height={200}
               width={200}
               alt="Picture of the author"
-              className=" object-cover h-[40px] transition-all duration-200 hover:scale-110 md:h-[80px]  w-full rounded-t-xl"
+              className=" object-cover  h-10 w-10 transition-all duration-200 hover:scale-110 md:h-[80px]  md:w-[20px] rounded-t-xl"
             ></Image>
             Email
           </a>

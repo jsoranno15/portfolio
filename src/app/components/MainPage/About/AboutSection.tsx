@@ -8,7 +8,7 @@ export const AboutSection = () => {
     >
       <SectionHeader text={"About"} />
       <div className="w-full  justify-center flex">
-        <div className="flex flex-col font-medium text-gray-400 text-justify gap-3 md:w-2/3">
+        <div className="flex flex-col font-medium text-gray-400  gap-3 md:w-2/3">
           <span>
             As a{" "}
             <span className="text-ds-main-accent font-bold">

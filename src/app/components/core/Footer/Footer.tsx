@@ -4,9 +4,12 @@ import Image from "next/image";
 import { SectionHeader } from "../SectionHeader";
 const Footer = () => {
   return (
-    <section className="light-mode:bg-blue-500 w-full text-sm flex justify-center  sm:px-[48px]  ">
+    <section
+      id={"contact-section"}
+      className="light-mode:bg-blue-500 w-full text-sm flex justify-center  sm:px-[48px]  "
+    >
       <div className="flex xl:max-w-[85%] flex-col text-gray-400  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
-        <SectionHeader text={"Contact Me"} />
+        <SectionHeader one={"Contact Me"} />
 
         <div className="flex gap-5">
           <div className=" flex gap-5">

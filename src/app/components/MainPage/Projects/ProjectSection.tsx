@@ -32,49 +32,51 @@ export const ProjectSection = () => {
   return (
     <section
       id="section-projects"
-      className="flex flex-col items-center py-[40px] sm:gap-5 "
+      className="flex items-center justify-center py-[40px] px-4 xl:px-0   "
     >
-      <SectionHeader text={"Projects"} />
+      <div className="flex flex-col items-center justify-center gap-5 xl:max-w-[85%]">
+        <SectionHeader one={"Recent"} two={"Projects"} />
 
-      <div className="flex flex-wrap gap-2 mb-6">
-        {["all", "webDev", "game", "moCap"].map((type) => (
-          <button
-            key={type}
-            onClick={() => handleFilterChange(type)}
-            className={`p-2 text-sm sm:text-lg transition-all duration-150 ${
-              selectedType === type ? "text-ds-main-accent" : ""
-            }`}
-          >
-            {typeLabels[type]}
-          </button>
-        ))}
-      </div>
+        <div className="flex  flex-wrap gap-2 mb-6 w-fit">
+          {["all", "webDev", "game", "moCap"].map((type) => (
+            <button
+              key={type}
+              onClick={() => handleFilterChange(type)}
+              className={`p-2 text-sm sm:text-lg transition-all duration-150 ${
+                selectedType === type ? "text-ds-main-accent" : ""
+              }`}
+            >
+              {typeLabels[type]}
+            </button>
+          ))}
+        </div>
 
-      <div
-        className={`grid gap-6  md:grid-cols-2  xl:grid-cols-3  ${
-          fadeOut ? "opacity-0" : "opacity-100"
-        }`}
-      >
-        {visibleProjects.length === 0 ? (
-          <div>No projects found</div>
-        ) : (
-          visibleProjects.map((project: any, i: React.Key) => (
-            <ProjectCard
-              key={i}
-              teamSize={project.teamSize}
-              tags={project.tags}
-              icon={project.icon}
-              year={project.year}
-              coverImage={project.coverImage}
-              title={project.title}
-              link={project.link}
-              engine={project.engine}
-              role={project.role}
-              blurb={project.blurb}
-              type={typeLabels[project.type]}
-            />
-          ))
-        )}
+        <div
+          className={`grid gap-6  md:grid-cols-2  xl:grid-cols-3  ${
+            fadeOut ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {visibleProjects.length === 0 ? (
+            <div>No projects found</div>
+          ) : (
+            visibleProjects.map((project: any, i: React.Key) => (
+              <ProjectCard
+                key={i}
+                teamSize={project.teamSize}
+                tags={project.tags}
+                icon={project.icon}
+                year={project.year}
+                coverImage={project.coverImage}
+                title={project.title}
+                link={project.link}
+                engine={project.engine}
+                role={project.role}
+                blurb={project.blurb}
+                type={typeLabels[project.type]}
+              />
+            ))
+          )}
+        </div>
       </div>
     </section>
   );

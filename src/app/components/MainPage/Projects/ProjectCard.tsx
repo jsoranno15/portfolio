@@ -30,8 +30,8 @@ export const ProjectCard = ({
 }) => {
   return (
     <a
-      className="bg-[#12161e] hover:scale-105 flex flex-col rounded-xl transition-all duration-200 
-        border-[1px]  border-white border-opacity-20 
+      className="bg-dark-purple hover:scale-105 flex flex-col rounded-xl transition-all duration-200 
+        border-[1px] border-gray-800 border-opacity-60 
         hover:border-[1px] hover:border-ds-main-accent hover:shadow-md hover:shadow-ds-main-accent "
       // style={{ boxShadow: "2px 2px 2px 2px rgb(0 0 0 / 20%)" }}
       href={link}
@@ -48,7 +48,7 @@ export const ProjectCard = ({
             </div>
             <div className="flex flex-col">
               <span className="text-[22px] font-bold break">{title}</span>
-              <div className="text-sm  text-ds-secondary-accent">{role}</div>
+              <div className="text-sm  text-ds-cyan">{role}</div>
             </div>
           </div>
 
@@ -59,13 +59,13 @@ export const ProjectCard = ({
             alt="Picture of the author"
             className=" object-cover  h-[200px] w-full rounded-t-xl"
           ></Image>
-          <div className="absolute bg-gradient-to-t from-[#12161e] from-15% to-75%  w-full top-0 h-[200px]"></div>
+          <div className="absolute bg-gradient-to-t from-dark-purple from-15% to-45%  w-full top-0 h-[200px]"></div>
         </div>
       )}
       {/* Bottom ------------- Section */}
       <section className="flex  flex-col gap-1  justify-between h-full p-4 rounded-b-xl bg-opacity-15">
         <div className="flex flex-col gap-2 mb-4">
-          <div className="text-gray-400 text-sm">{blurb}</div>
+          <div className=" text-sm">{blurb}</div>
         </div>
 
         <div className="flex flex-col gap-4">
@@ -78,7 +78,7 @@ export const ProjectCard = ({
               tags.map((tag, i) => (
                 <div
                   key={i}
-                  className=" whitespace-nowrap bg-ds-main-accent bg-opacity-5 text-ds-main-accent text-xs p-1 px-3 rounded-full"
+                  className=" whitespace-nowrap bg-ds-cyan bg-opacity-5 text-ds-cyan text-xs p-1 px-3 rounded-full"
                 >
                   {tag}
                 </div>

@@ -2,6 +2,15 @@ import { TailwindCSSIcon } from "../../icons";
 
 export const SkillObj = [
   {
+    title: "Game Engineering",
+    skills: [
+      { image: "unity.png", name: "Unity 2D/3D", color: "222c37" },
+      { image: "ue.png", name: "Unreal Engine", color: "C124FC" },
+      { image: "godot.png", name: "Godot", color: "468BBE" },
+      { image: "photoshop.png", name: "Adobe PhotoShop", color: "2FA8FF" },
+    ],
+  },
+  {
     title: "Web Development",
     skills: [
       { image: "react.webp", name: "React", color: "61dbfb" },
@@ -11,15 +20,6 @@ export const SkillObj = [
       { image: "html.webp", name: "HTML 5", color: "F3662B" },
       { image: "python.webp", name: "Python", color: "FED141" },
       { image: "c++.png", name: "C++", color: "0C6AC3" },
-    ],
-  },
-  {
-    title: "Game Engineering",
-    skills: [
-      { image: "unity.png", name: "Unity 2D/3D", color: "222c37" },
-      { image: "ue.png", name: "Unreal Engine", color: "C124FC" },
-      { image: "godot.png", name: "Godot", color: "468BBE" },
-      { image: "photoshop.png", name: "Adobe PhotoShop", color: "2FA8FF" },
     ],
   },
   {

@@ -1,15 +1,50 @@
+import { useEffect } from "react";
 import { SectionHeader } from "../../core/SectionHeader";
+import { useRouter } from "next/router";
+import { NormalArrowIcon } from "../../icons";
 
 export const AboutSection = () => {
+  const router = useRouter();
+
+  const handleScroll = (event: any, targetId: string) => {
+    event.preventDefault();
+
+    if (router.pathname !== "/") {
+      sessionStorage.setItem("scrollTarget", targetId);
+      router.push("/");
+    } else {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  useEffect(() => {
+    const scrollTarget = sessionStorage.getItem("scrollTarget");
+    if (scrollTarget) {
+      const targetElement = document.getElementById(scrollTarget);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+      sessionStorage.removeItem("scrollTarget");
+    }
+  }, [router.pathname]);
+
   return (
     <section
       id="section-about"
-      className="flex py-[40px] flex-col items-center justify-center  gap-5 min-h-[500px]"
+      className="flex py-[40px] w-full min-h-[100vh] flex-col 
+      pt-40 lg:pt-0  p-4 sm:px-[48px]  justify-center items-center gap-5  "
     >
-      <SectionHeader text={"About"} />
-      <div className="w-full  justify-center flex">
-        <div className="flex flex-col font-medium text-gray-400  gap-3 md:w-2/3">
-          <span>
+      <div className="w-full  flex gap-8 xl:max-w-[85%]">
+        <div className="flex relative flex-col font-medium gap-5 md:w-1/2">
+          <div className="size-[500px] translate absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
+
+          <div className="w-full">
+            <SectionHeader one={"About"} two={"Me"} />
+          </div>
+          <span className="">
             As a{" "}
             <span className="text-ds-main-accent font-bold">
               Full Stack Engineer
@@ -38,11 +73,23 @@ export const AboutSection = () => {
             integrations.
           </span>
           <span>
-            I&apos;m committed to building robust, user-centered digital
-            experiences and continually refining my craft. If you&apos;re
-            interested in collaborating on challenging projects or discussing
-            the latest in front-end development, I&apos;d be happy to connect.
+            If you&apos;re interested in collaborating on challenging projects
+            or discussing the latest in front-end development, I&apos;d be happy
+            to connect.
           </span>
+          <button
+            className=" w-fit flex gap-2 items-center justify-centers border border-gray-800 py-2 px-4 rounded-xl
+            hover:text-ds-main-accent hover:border-ds-main-accent hover:border-opacity-50 transition-all duration-300"
+            onClick={(e) => handleScroll(e, "contact-section")}
+          >
+            Contact me
+            <span className="size-6 flex rotate-90">
+              <NormalArrowIcon />
+            </span>
+          </button>
+        </div>
+        <div className=" sm:justify-end  sm:w-1/2 sm:items-center hidden md:flex">
+          <div className="aspect-square h-[400px] w-[400px] bg-purple-300"></div>
         </div>
       </div>
     </section>

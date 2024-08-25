@@ -11,10 +11,10 @@
   --background-end-rgb: 255, 255, 255;
   /* ------------ */
   --background-color-light: #f7fafc;
-  --text-color-light: #0b0c10;
+  --text-color-light: #3f2b53;
   /* ------------ */
-  --background-color-dark: #0b0c10;
-  --text-color-dark: #f7fafc;
+  --background-color-dark: #010319;
+  --text-color-dark: #e3ecff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +28,9 @@
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
+  color: #e3ecff;
+
+  background-size: 40px 40px;
 }
 
 .customShadow {

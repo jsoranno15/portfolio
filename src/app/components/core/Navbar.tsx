@@ -31,14 +31,17 @@ const Navbar = () => {
   }, [router.pathname]);
 
   return (
-    <nav className="p-4 pt-8 md:pt-16 absolute w-full">
-      <div className="flex flex-wrap items-center justify-center w-full gap-2 md:gap-8 text-sm md:text-base">
+    <nav className="p-4 pt-8 md:pt-16 absolute w-full  flex items-center justify-center">
+      <div
+        className="flex flex-wrap items-center justify-center w-fit  bg-ds-main-accent bg-opacity-10 rounded-full px-5 py-3 sm:py-1 gap-2 md:gap-8 text-sm md:text-base
+      0"
+      >
         {NavItems.map((item, i) => (
           <a
             key={i}
             href={item.section}
             onClick={(e) => handleScroll(e, item.section)}
-            className=""
+            className="hover:text-ds-main-accent transition-all duration-300"
           >
             {item.name}
           </a>
@@ -49,7 +52,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-1 items-center hover:scale-110 transition-all duration-200 
-            bg-gradient-to-br from-ds-secondary-accent  to-[#EA00D9] from-30%  p-1 px-4 rounded-full"
+            bg-ds-main-accent text-[#0b0c10] p-1 px-4 rounded-full"
           >
             Resume
             <div className="h-5 w-5">
@@ -73,13 +76,14 @@ const NavItems = [
     section: "section-about",
   },
   {
-    name: "Skills",
-    section: "section-skills",
-  },
-  {
     name: "Experience",
     section: "section-exp",
   },
+  {
+    name: "Skills",
+    section: "section-skills",
+  },
+
   {
     name: "Projects",
     section: "section-projects",

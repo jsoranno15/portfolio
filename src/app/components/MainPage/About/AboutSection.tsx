@@ -53,7 +53,7 @@ export const AboutSection = () => {
             <div className="size-full md:size-[500px] absolute z-[-1]  bg-ds-main-accent opacity-10 rounded-full blur-[100px]"></div>
 
             <div className="w-full  justify-center gap-2 flex flex-col">
-              <div className="md:text-ds-main-accent text-ds-grey  md:font-bold text-lg   md:hidden flex justify-start ">
+              <div className="text-ds-grey font-bold text-lg   lg:hidden flex justify-start ">
                 Juliana Soranno
               </div>
               <SectionHeader one={"About"} two={"Me"} />

@@ -28,6 +28,7 @@ const config: Config = {
         "dark-purple": "#0D0121",
         "neon-purple": "#A632FE",
         "ds-cyan": "#71F6F7",
+        "neon-pink": "#E967E0",
       },
     },
   },

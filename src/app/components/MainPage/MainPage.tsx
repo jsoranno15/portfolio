@@ -9,7 +9,7 @@ import { SkillsSection } from "./Skills/SkillsSection";
 const MainPage = () => {
   return (
     <PrimaryLayout>
-      <main className=" items-center flex flex-col justify-center ">
+      <main className=" items-center flex flex-col justify-center   ">
         <div className="flex flex-col w-full  ">
           <div className="">
             <AboutSection />

@@ -29,7 +29,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: var(--background-color-dark);
   color: #e3ecff;
-
   background-size: 40px 40px;
 }
 

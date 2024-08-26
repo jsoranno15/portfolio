@@ -9,7 +9,7 @@ const Footer = () => {
       className="light-mode:bg-blue-500 w-full text-sm flex justify-center  sm:px-[48px]  "
     >
       <div className="flex relative xl:max-w-[85%] flex-col text-ds-grey  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
-        <SectionHeader one={"Contact Me"} />
+        <SectionHeader one={"Contact"} two={"Me"} />
         <div className="size-full md:size-[300px] z-[-1] absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
 
         <div className="flex gap-5">

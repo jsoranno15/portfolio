@@ -24,10 +24,18 @@ export const Experience = [
     timeFrame: "Aug 2022 — April 2023",
     title: "Coding Teacher — Penguin Coding School",
     points: [
-      "Instructed classes of 2-25 students at 4 different expertise levels in Python, Roblox, Scratch, and JavaScript",
+      "Instructed classes of 2-25 students at 4 different expertise levels in Python, Lua, JavaScript, and Scratch ",
       "Created custom lesson plans at varying experience levels based on student interests",
     ],
-    skills: ["Management ", "Leadership", "Instructing"],
+    skills: [
+      "Python",
+      "Lua",
+      "JavaScript",
+      "Scratch",
+      "Management ",
+      "Leadership",
+      "Instructing",
+    ],
     link: "https://penguincodingschool.com/",
     image: "pcs.jpg",
   },
@@ -36,7 +44,7 @@ export const Experience = [
     title: "New York University — Tandon School of Engineering",
     points: [
       "Bachelor's of Science in Computer Science, Minor in Game Engineering",
-      "Dean's List 2024",
+      "Dean's List 2023",
     ],
     skills: [
       "Design & Analysis of Algorithms",

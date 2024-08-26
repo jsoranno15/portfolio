@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <div className="flex relative xl:max-w-[85%] flex-col text-ds-grey  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
         <SectionHeader one={"Contact"} two={"Me"} />
-        <div className="size-full md:size-[300px] z-[-1] absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
+        <div className="size-full md:size-[300px] z-[-1] absolute bg-ds-main-accent opacity-10 rounded-full blur-[100px]"></div>
 
         <div className="flex gap-5">
           <div className=" flex gap-5">

@@ -43,13 +43,13 @@ export const AboutSection = () => {
       >
         Juliana Soranno
       </span>
-      <div className="w-full flex gap-8 xl:max-w-[85%] flex-col justify-center ">
+      <div className="w-full flex gap-8 xl:max-w-[85%] text-ds-grey flex-col justify-center ">
         <div className="flex flex-row gap-8">
           <div className="flex relative flex-col font-medium gap-5 md:w-1/2 ">
-            <div className="size-full md:size-[500px]  absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
+            <div className="size-full md:size-[500px] absolute z-[-1]  bg-ds-main-accent opacity-10 rounded-full blur-[100px]"></div>
 
-            <div className="w-full  justify-center ">
-              <div className="text-ds-main-accent font-bold text-lg  md:hidden flex justify-start ">
+            <div className="w-full  justify-center gap-2 flex flex-col">
+              <div className="md:text-ds-main-accent text-ds-grey md:font-bold text-lg  md:hidden flex justify-start ">
                 Juliana Soranno
               </div>
               <SectionHeader one={"About"} two={"Me"} />

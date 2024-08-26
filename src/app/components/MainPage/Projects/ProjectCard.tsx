@@ -65,7 +65,7 @@ export const ProjectCard = ({
       {/* Bottom ------------- Section */}
       <section className="flex  flex-col gap-1  justify-between h-full p-4 rounded-b-xl bg-opacity-15">
         <div className="flex flex-col gap-2 mb-4">
-          <div className=" text-sm">{blurb}</div>
+          <div className="text-ds-grey text-sm">{blurb}</div>
         </div>
 
         <div className="flex flex-col gap-4">
@@ -99,7 +99,7 @@ export const ProjectCard = ({
 const InfoBox = ({ text, data }: { text: string; data: string }) => {
   return (
     <div className="flex flex-col whitespace-nowrap text-sm w-1/3">
-      <span className="text-opacity-50">{text}</span>
+      <span className="text-ds-grey">{text}</span>
       <span className="">{data}</span>
     </div>
   );

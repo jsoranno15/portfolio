@@ -61,7 +61,7 @@ export const ExperienceSection = () => {
                         </div>
                       )}
                     </div>
-                    <div className="flex flex-col ml-4 text-sm sm:text-base text-opacity-50 ">
+                    <div className="flex flex-col ml-4 text-sm sm:text-base text-ds-grey ">
                       {item.points.map((point, i) => (
                         <div key={i} className="flex gap-2 items-start ">
                           <span className=" inline-block mt-2 min-w-1.5 min-h-1.5 h-1.5 w-1.5 bg-white rounded-full"></span>

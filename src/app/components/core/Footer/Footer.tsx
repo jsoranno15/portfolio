@@ -8,9 +8,9 @@ const Footer = () => {
       id={"contact-section"}
       className="light-mode:bg-blue-500 w-full text-sm flex justify-center  sm:px-[48px]  "
     >
-      <div className="flex relative xl:max-w-[85%] flex-col text-opacity-50  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
+      <div className="flex relative xl:max-w-[85%] flex-col text-ds-grey  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
         <SectionHeader one={"Contact Me"} />
-        <div className="size-full md:size-[300px]  absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
+        <div className="size-full md:size-[300px] z-[-1] absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
 
         <div className="flex gap-5">
           <div className=" flex gap-5">
@@ -54,39 +54,59 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col items-center gap-1 w-[65%] text-center md:w-full">
-          <div className="text-gray-500">
+          <div className="text-gray-400 ">
             This website was created using{" "}
-            <span className="text-white hover:text-ds-main-accent">
+            <span className="text-ds-white ">
               <a
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className=" hover:text-ds-main-accent transition-all duration-300"
               >
                 Next.js,
               </a>{" "}
               <a
-                href="https://nextjs.org/"
+                href="https://react.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className=" hover:text-ds-main-accent transition-all duration-300"
               >
                 React,
               </a>{" "}
-              TypeScript,
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:text-ds-main-accent transition-all duration-300"
+              >
+                TypeScript,
+              </a>
             </span>{" "}
-            and <span className="text-ds-main-accent">TailwindCSS</span>
+            and{" "}
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-ds-main-accent transition-all duration-300"
+            >
+              Tailwind CSS
+            </a>
           </div>
 
-          <div className=" flex items-center gap-1 justify-center">
+          <div className="text-gray-400  flex items-center gap-1 justify-center">
             Deployed on{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://vercel.com/"
+              className="hover:text-ds-main-accent text-ds-white"
             >
               Vercel{" "}
             </a>
           </div>
-          <div className="font-normal pt-2">© 2024 Juliana Soranno</div>
+          <div className="font-normal pt-2 text-gray-400">
+            © 2024 Juliana Soranno
+          </div>
         </div>
       </div>
     </section>

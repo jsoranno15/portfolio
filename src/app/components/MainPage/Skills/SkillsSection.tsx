@@ -25,7 +25,7 @@ export const SkillsSection = () => {
                   return (
                     <div
                       key={i}
-                      className="flex flex-col text-opacity-50 gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
+                      className="flex flex-col text-ds-grey gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
                     >
                       <div
                         className={`flex relative border rounded-xl border-gray-800  justify-center p-3  size-[60px] md:size-[100px]`}

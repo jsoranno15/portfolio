@@ -8,8 +8,9 @@ const Footer = () => {
       id={"contact-section"}
       className="light-mode:bg-blue-500 w-full text-sm flex justify-center  sm:px-[48px]  "
     >
-      <div className="flex xl:max-w-[85%] flex-col text-gray-400  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
+      <div className="flex relative xl:max-w-[85%] flex-col text-opacity-50  font-semibold items-center w-full gap-8  sm:py-[40px] pb-[60px]">
         <SectionHeader one={"Contact Me"} />
+        <div className="size-full md:size-[300px]  absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
 
         <div className="flex gap-5">
           <div className=" flex gap-5">
@@ -53,13 +54,26 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col items-center gap-1 w-[65%] text-center md:w-full">
-          <div>
-            This website was created using
-            <span className="text-ds-secondary-accent">
-              {" "}
-              Next.js, React, TypeScript,
+          <div className="text-gray-500">
+            This website was created using{" "}
+            <span className="text-white hover:text-ds-main-accent">
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Next.js,
+              </a>{" "}
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                React,
+              </a>{" "}
+              TypeScript,
             </span>{" "}
-            and <span className="text-ds-secondary-accent">TailwindCSS</span>
+            and <span className="text-ds-main-accent">TailwindCSS</span>
           </div>
 
           <div className=" flex items-center gap-1 justify-center">

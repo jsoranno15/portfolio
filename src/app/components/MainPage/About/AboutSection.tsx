@@ -34,13 +34,12 @@ export const AboutSection = () => {
   return (
     <section
       id="section-about"
-      className="flex py-[40px] w-full flex-col pt-[150px] lg:pt-0 p-4 
+      className="flex py-[40px] w-full flex-col pt-[150px]  p-4 min-h-[100vh]
       sm:px-[48px] text-sm sm:text-base  justify-center items-center gap-5  "
     >
       <div className="w-full flex gap-8 xl:max-w-[85%]">
         <div className="flex relative flex-col font-medium gap-5 md:w-1/2 ">
           <div className="size-full md:size-[500px]  absolute bg-ds-main-accent opacity-20 rounded-full blur-[100px]"></div>
-
           <div className="w-full  justify-center ">
             <SectionHeader one={"About"} two={"Me"} />
           </div>

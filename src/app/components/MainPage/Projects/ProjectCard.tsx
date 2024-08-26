@@ -41,14 +41,14 @@ export const ProjectCard = ({
       {coverImage && (
         <div className="relative">
           <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
-            <div className="flex p-[1.5px] bg-gradient-to-b from-ds-main-accent to-[#EA00D9] rounded-full">
-              <div className="h-[55px] w-[55px]  bg-black items-center flex justify-center  aspect-square rounded-full">
+            <div className="flex  items-center justify-center p-[1.5px] bg-ds-cyan rounded-full">
+              <div className="h-[55px] w-[55px] bg-black items-center flex justify-center  aspect-square rounded-full">
                 <div className="w-[40px] h-[40px] ">{icon}</div>
               </div>
             </div>
             <div className="flex flex-col">
               <span className="text-[22px] font-bold break">{title}</span>
-              <div className="text-sm  text-ds-cyan">{role}</div>
+              <div className="text-sm  text-ds-main-accent">{role}</div>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export const ProjectCard = ({
 const InfoBox = ({ text, data }: { text: string; data: string }) => {
   return (
     <div className="flex flex-col whitespace-nowrap text-sm w-1/3">
-      <span className="text-gray-400">{text}</span>
+      <span className="text-opacity-50">{text}</span>
       <span className="">{data}</span>
     </div>
   );

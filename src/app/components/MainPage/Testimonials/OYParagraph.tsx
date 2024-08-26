@@ -2,7 +2,7 @@ export const OYParagraph = () => {
   const className = "text-ds-main-accent font-semibold";
 
   return (
-    <div className="flex flex-col gap-2 text-sm text-gray-400">
+    <div className="flex flex-col gap-2 text-sm text-opacity-50">
       <span>
         Juliana and I worked together in the engineering team at Everyrealm,
         where we collaborated to build multiple products. She was always on top

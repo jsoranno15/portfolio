@@ -25,7 +25,7 @@ export const SkillsSection = () => {
                   return (
                     <div
                       key={i}
-                      className="flex flex-col text-gray-400 gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
+                      className="flex flex-col text-opacity-50 gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
                     >
                       <div
                         className={`flex relative border rounded-xl border-gray-800  justify-center p-3  size-[60px] md:size-[100px]`}
@@ -34,7 +34,7 @@ export const SkillsSection = () => {
                           className="absolute z-[-1] items-center apsect-square rounded-full size-[40px] md:size-[60px]  blur-lg
                           top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                           style={{
-                            background: `linear-gradient( #${skill.color}80, #${skill.color}70);`,
+                            background: `linear-gradient( #${skill.color}80, #${skill.color}70)`,
                           }}
                         ></div>
                         <Image

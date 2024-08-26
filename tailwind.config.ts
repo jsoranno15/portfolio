@@ -22,8 +22,9 @@ const config: Config = {
       colors: {
         "ds-main-accent": "#CBACF9",
         "ds-secondary-accent": "#45A29E",
+        "text-white": "#e3ecff",
         "darkest-purple": "#010319",
-        "dark-purple": "#07091F",
+        "dark-purple": "#0D0121",
         "neon-purple": "#A632FE",
         "ds-cyan": "#71F6F7",
       },

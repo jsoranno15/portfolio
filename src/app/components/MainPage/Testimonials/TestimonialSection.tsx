@@ -34,7 +34,7 @@ export const TestimonialSection = () => {
                     </div>
                     <div className="flex flex-col">
                       <div className="font-bold text-lg">{item.name}</div>
-                      <div className="text-base text-ds-secondary-accent">
+                      <div className="text-base text-ds-main-accent">
                         {item.company}
                       </div>
                     </div>

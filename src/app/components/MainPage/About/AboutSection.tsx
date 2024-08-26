@@ -38,7 +38,7 @@ export const AboutSection = () => {
   return (
     <section
       id="section-about"
-      className="flex  w-full flex-col py-[40px] sm:pb-[80px] p-4 min-h-[calc(100vh-104px)] 
+      className="flex  w-full flex-col py-[40px] sm:py-[40px] sm:pb-[80px] p-4 sm:min-h-[calc(100vh-104px)] 
       sm:px-[48px] text-sm sm:text-base  justify-center items-center gap-14  "
     >
       {/* <span

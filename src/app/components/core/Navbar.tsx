@@ -31,9 +31,10 @@ const Navbar = () => {
   }, [router.pathname]);
 
   return (
-    <nav className="p-4 pt-8 md:pt-16 absolute w-full  flex items-center justify-center">
+    <nav className="p-4 pt-8 md:pt-12  w-full  flex items-center justify-center">
       <div
-        className="flex flex-wrap items-center justify-center w-fit  bg-ds-main-accent bg-opacity-10 rounded-full px-5 py-2 gap-2 md:gap-8 text-sm md:text-base
+        className="flex flex-wrap items-center justify-center w-fit  bg-ds-main-accent bg-opacity-10 
+        rounded-full px-5 py-2 gap-2 md:gap-8 text-sm md:text-base
       0"
       >
         {NavItems.map((item, i) => (

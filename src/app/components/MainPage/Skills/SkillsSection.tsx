@@ -17,7 +17,7 @@ export const SkillsSection = () => {
               key={i}
               className="flex flex-col  gap-3 items-center justify-center"
             >
-              <div className="text-lg text-ds-secondary-accent sm:text-[20px] font-semibold">
+              <div className="text-lg text-ds-cyan sm:text-[20px] font-semibold">
                 {item.title}
               </div>
               <div className={`flex justify-center flex-wrap gap-3 `}>

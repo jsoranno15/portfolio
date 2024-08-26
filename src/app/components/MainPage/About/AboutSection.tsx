@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { SectionHeader } from "../../core/SectionHeader";
 import { useRouter } from "next/router";
-import { NormalArrowIcon } from "../../icons";
+import { ArrowIcon, NormalArrowIcon, PersonIcon2 } from "../../icons";
 
 export const AboutSection = () => {
   const router = useRouter();
@@ -76,17 +76,33 @@ export const AboutSection = () => {
             or discussing the latest in front-end development, I&apos;d be happy
             to connect.
           </span>
-          <button
-            className=" w-fit flex gap-2 items-center justify-centers border border-gray-800 py-2 px-4 rounded-xl
+          <div className="flex flex-row w-full items-center gap-5">
+            <button
+              className=" w-fit flex gap-2 items-center bg-dark-purple justify-centers border border-gray-800 py-2 px-4 rounded-xl
             hover:text-ds-main-accent hover:border-ds-main-accent hover:border-opacity-50 transition-all duration-300"
-            onClick={(e) => handleScroll(e, "contact-section")}
-          >
-            Contact me
-            <span className="size-6 flex rotate-90">
-              <NormalArrowIcon />
-            </span>
-          </button>
+              onClick={(e) => handleScroll(e, "contact-section")}
+            >
+              Contact me
+              <span className="size-5 flex">
+                <PersonIcon2 />
+              </span>
+            </button>
+
+            <a
+              href="/docs/soranno_resume2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-fit flex gap-2 items-center justify-centers  bg-ds-main-accent text-darkest-purple py-2 px-4 rounded-xl
+             transition-all duration-300 hover:scale-110"
+            >
+              Resume
+              <div className="size-6">
+                <ArrowIcon />
+              </div>
+            </a>
+          </div>
         </div>
+
         <div className=" sm:justify-end  sm:w-1/2 sm:items-center hidden md:flex">
           <div className="aspect-square h-[400px] w-[400px] bg-purple-300"></div>
         </div>

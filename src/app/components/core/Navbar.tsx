@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="p-4 pt-8 md:pt-16 absolute w-full  flex items-center justify-center">
       <div
-        className="flex flex-wrap items-center justify-center w-fit  bg-ds-main-accent bg-opacity-10 rounded-full px-5 py-3 sm:py-1 gap-2 md:gap-8 text-sm md:text-base
+        className="flex flex-wrap items-center justify-center w-fit  bg-ds-main-accent bg-opacity-10 rounded-full px-5 py-2 gap-2 md:gap-8 text-sm md:text-base
       0"
       >
         {NavItems.map((item, i) => (
@@ -46,20 +46,7 @@ const Navbar = () => {
             {item.name}
           </a>
         ))}
-        <div className="from-gray-800 bg-gradient-to-b 0 p-[1.5px] rounded-full">
-          <a
-            href="/docs/soranno_resume2024.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-1 items-center hover:scale-110 transition-all duration-200 
-            bg-ds-main-accent text-[#0b0c10] p-1 px-4 rounded-full"
-          >
-            Resume
-            <div className="h-5 w-5">
-              <ArrowIcon />
-            </div>
-          </a>
-        </div>
+
         {/* <DarkModeToggle /> */}
       </div>
     </nav>

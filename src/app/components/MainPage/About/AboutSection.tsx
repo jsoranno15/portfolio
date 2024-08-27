@@ -71,7 +71,7 @@ export const AboutSection = () => {
               responsive user interfaces with{" "}
               <span className="text-ds-main-accent font-bold">
                 {" "}
-                Next.js, React, TypeScript, Zustand, and Tailwind CSS.
+                Next.js, React, TypeScript, and Tailwind CSS.
               </span>{" "}
             </span>
             <span>

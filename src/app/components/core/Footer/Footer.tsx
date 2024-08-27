@@ -53,7 +53,7 @@ const Footer = () => {
             Email
           </a>
         </div>
-        <div className="flex flex-col items-center gap-1 w-[65%] text-center md:w-full">
+        <div className="flex flex-col items-center gap-1 w-[45%] text-center md:w-full">
           <div className="text-gray-400 ">
             This website was created using{" "}
             <span className="text-ds-white ">
@@ -89,7 +89,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white hover:text-ds-main-accent transition-all duration-300"
             >
-              Tailwind CSS
+              TailwindCSS.
             </a>
           </div>
 
@@ -99,11 +99,21 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://vercel.com/"
-              className="hover:text-ds-main-accent text-ds-white"
+              className="hover:text-ds-main-accent transition-all duration-300 text-ds-white"
             >
-              Vercel{" "}
+              Vercel,{" "}
+            </a>
+            hosted on
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/jsoranno15/portfolio"
+              className="hover:text-ds-main-accent transition-all duration-300 text-ds-white"
+            >
+              GitHub{" "}
             </a>
           </div>
+
           <div className="font-normal pt-2 text-gray-400">
             © 2024 Juliana Soranno
           </div>

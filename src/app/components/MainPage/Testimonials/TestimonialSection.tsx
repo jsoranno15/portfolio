@@ -9,9 +9,9 @@ export const TestimonialSection = () => {
       id="section-testimonials"
       className="flex py-[40px] items-center w-full   flex-col gap-8 "
     >
-      <div className="flex flex-col xl:max-w-[85%] px-4 xl:px-0 items-center gap-5">
+      <div className="flex flex-col xl:max-w-[85%]  px-4 xl:px-0 items-center gap-5">
         <SectionHeader one={"Testimonials"} />
-        <div className="flex flex-col  gap-8 sm:gap-20 ">
+        <div className="flex flex-col  gap-8 sm:gap-10 ">
           {Testimonials.map((item, i) => {
             return (
               <div key={i} className="">

@@ -9,7 +9,7 @@ export const Experience = [
       "Collaborated with backend developers to integrate AWS Lambda, DynamoDB, and API Gateway, significantly boosting application performance and scalability.",
     ],
     skills: [
-      "React.js ",
+      "React",
       "Next.js",
       "TypeScript",
       "TailwindCSS",

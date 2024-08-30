@@ -9,7 +9,7 @@ export const AboutBox = () => {
       className="aspect-square transition-all duration-150 size-[350px] overflow-hidden 
                lg:size-[400px] bg-dark-purple border-[1px] border-gray-800 border-opacity-60 rounded-xl"
       style={{
-        backgroundSize: "80px 80px;",
+        backgroundSize: "80px 80px",
         backgroundImage:
           " linear-gradient(to right, #14133A 1px, transparent 1px), linear-gradient(to bottom, #14133A 1px, transparent 1px)",
       }}

@@ -53,7 +53,7 @@ const Footer = () => {
             Email
           </a>
         </div>
-        <div className="flex flex-col items-center gap-1 w-[45%] text-center md:w-full">
+        <div className="flex flex-col items-center gap-1 w-[85%] text-center md:w-full">
           <div className="text-gray-400 ">
             This website was created using{" "}
             <span className="text-ds-white ">

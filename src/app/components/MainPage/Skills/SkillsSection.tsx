@@ -28,10 +28,10 @@ export const SkillsSection = () => {
                       className="flex flex-col text-ds-grey gap-2 items-center w-[90px] sm:w-[120px] text-center text-sm sm:text-base "
                     >
                       <div
-                        className={`flex relative border rounded-xl border-gray-800 overflow-hidden justify-center p-3  size-[60px] md:size-[100px]`}
+                        className={`flex relative border bg-dark-purple rounded-xl border-gray-800 overflow-hidden justify-center p-3  size-[60px] md:size-[100px]`}
                       >
                         <div
-                          className="absolute z-[-1] items-center apsect-square rounded-full size-[40px] md:size-[80px]  blur-lg
+                          className="absolute z-[2]  items-center apsect-square rounded-full size-[40px] md:size-[80px]  blur-lg
                           top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                           style={{
                             background: `linear-gradient( #${skill.color}80, #${skill.color}70)`,
@@ -42,7 +42,7 @@ export const SkillsSection = () => {
                           width={500}
                           height={500}
                           alt=""
-                          className="w-fit object-contain"
+                          className="w-fit object-contain z-[3]"
                         />
                       </div>
                       {skill.name}

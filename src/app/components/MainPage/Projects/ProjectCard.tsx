@@ -41,7 +41,7 @@ export const ProjectCard = ({
       {coverImage && (
         <div className="relative">
           <div className="items-center absolute bottom-2 left-4 z-[3] flex gap-3 ">
-            <div className="flex  items-center justify-center p-[1.5px] bg-ds-cyan rounded-full">
+            <div className="flex  items-center justify-center p-[2px] bg-ds-cyan rounded-full">
               <div className="h-[55px] w-[55px] bg-black items-center flex justify-center  aspect-square rounded-full">
                 <div className="w-[40px] h-[40px] ">{icon}</div>
               </div>
@@ -71,7 +71,11 @@ export const ProjectCard = ({
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-3">
             <InfoBox text={"Year"} data={year} />
-            {teamSize && <InfoBox text={"Team Size"} data={teamSize} />}
+            {teamSize ? (
+              <InfoBox text={"Team Size"} data={teamSize} />
+            ) : (
+              <InfoBox text={"Company"} data={"Everyrealm"} />
+            )}
           </div>
           <div className="flex flex-wrap gap-2">
             {tags &&

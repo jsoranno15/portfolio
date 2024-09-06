@@ -38,10 +38,7 @@ export const TestimonialSection = () => {
                   }}
                 >
                   <div className="flex gap-4 items-center">
-                    <div
-                      className="aspect-square rounded-full h-[60px] w-[60px]
-                  min-h-[60px] min-w-[60px] p-[1.5px] bg-gradient-to-b from-ds-main-accent to-neon-purple"
-                    >
+                    <div className="aspect-square rounded-full size-[60px] p-[1.75px] bg-gradient-to-b from-ds-main-accent to-neon-purple">
                       <Image
                         src={`/img/testimonials/${item.image}.jpg`}
                         width={500}
@@ -52,7 +49,7 @@ export const TestimonialSection = () => {
                     </div>
                     <div className="flex flex-col">
                       <div className="font-bold text-lg">{item.name}</div>
-                      <div className="text-base text-ds-main-accent">
+                      <div className="text-base text-ds-cyan">
                         {item.company}
                       </div>
                     </div>

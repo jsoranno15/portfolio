@@ -7,7 +7,7 @@ export const TestimonialSection = () => {
   return (
     <section
       id="section-testimonials"
-      className="flex py-[40px] items-center w-full   flex-col gap-8 "
+      className="flex py-[40px] items-center w-full  justify-center min-h-[100vh] flex-col gap-8 "
     >
       <div className="flex flex-col xl:max-w-[85%]  px-4 xl:px-0 items-center gap-5">
         <SectionHeader one={"Testimonials"} />

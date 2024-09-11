@@ -1,4 +1,5 @@
 import {
+  BookIcon,
   BugIcon,
   CryptoCoin,
   FireIcon,
@@ -25,28 +26,37 @@ export const Projects = [
     coverImage: "everyworld",
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Zustand"],
   },
-  // {
-  //   type: "webDev",
-  //   title: "Portfolio Website",
-  //   icon: <PersonIcon />,
-  //   year: "2024",
-  //   link: "/",
-  //   engine: "Unreal Engine 5 (2023)",
-  //   role: "Frontend Developer",
-  //   teamSize: "1",
-  //   blurb:
-  //     "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
-  //   coverImage: "portfolio",
-  //   tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
-  // },
 
+  {
+    type: "webDev",
+    title: "Library Management App",
+    teamSize: "1",
+    icon: <BookIcon />,
+    link: "https://github.com/jsoranno15/LibraryApp",
+    year: "2024",
+    engine: "",
+    role: "Full Stack Engineer",
+    blurb:
+      "An ongoing project, the Library Management App lets users manage their book collections with full CRUD functionality. Search for books via the Google Books API, add them to your library, track favorite and completed books and securely log in using OAuth integration.",
+    coverImage: "library",
+    tags: [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "TailwindCSS",
+      "Next.js",
+      "Firebase",
+      "MongoDB",
+      "Google Books API",
+    ],
+  },
   {
     type: "game",
     title: "Ember Point",
     teamSize: "11",
     icon: <FireIcon />,
     link: "https://store.steampowered.com/app/2912870/Ember_Point/",
-    year: "2023",
+    year: "2024",
     engine: "Unreal Engine 5 (2023)",
     role: "Motion Capture Developer & Technical Designer",
     blurb:
@@ -67,6 +77,20 @@ export const Projects = [
     blurb:
       "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
     tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
+  },
+  {
+    type: "webDev",
+    title: "Portfolio Website",
+    icon: <PersonIcon />,
+    year: "2024",
+    link: "/",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Frontend Developer",
+    teamSize: "1",
+    blurb:
+      "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
+    coverImage: "portfolio",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
   },
   {
     type: "webDev",

@@ -56,7 +56,7 @@ export const ProjectCard = ({
             src={`/img/projects/${coverImage}.webp`}
             height={200}
             width={200}
-            alt="Picture of the author"
+            alt=""
             className=" object-cover  h-[200px] w-full rounded-t-xl"
           ></Image>
           <div className="absolute bg-gradient-to-t from-dark-purple from-15% to-45%  w-full top-0 h-[200px]"></div>

@@ -1,6 +1,6 @@
 export const AboutParagraphs = () => {
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <span className="">
         As a{" "}
         <span className="text-ds-main-accent font-bold">
@@ -32,6 +32,6 @@ export const AboutParagraphs = () => {
         If you&apos;re interested in collaborating on challenging projects or
         discussing the latest in technology, I&apos;d be happy to connect.
       </span>
-    </>
+    </div>
   );
 };

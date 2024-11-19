@@ -1,9 +1,12 @@
 import {
+  BombIcon,
   BookIcon,
   BugIcon,
   CryptoCoin,
   FireIcon,
   ForkKnifeIcon,
+  HomeIcon,
+  HomeIcon2,
   HTMLIcon,
   MicroChipIcon,
   PersonIcon,
@@ -13,6 +16,32 @@ import {
 } from "../../icons";
 
 export const Projects = [
+  {
+    type: "game",
+    title: "Hometopia",
+    icon: <HomeIcon />,
+    year: "2024",
+    link: "https://store.steampowered.com/app/1138640/Hometopia/",
+    engine: "Unity",
+    role: "Game Engineer",
+    blurb:
+      "The ultimate game for builders. Build your dream home with Hometopia’s powerful tools and realistic graphics. Collaborate with friends or build solo as you turn your creative vision to life. Build houses, neighborhoods, and entire cities.",
+    coverImage: "Hometopia",
+    tags: ["Unity", "C#", "Figma"],
+  },
+  {
+    type: "webDev",
+    title: "Luckyworld",
+    icon: <BombIcon />,
+    year: "2024",
+    link: "https://www.everyworld.com/luckyworld",
+    engine: "Unreal Engine 5 (2023)",
+    role: "Frontend Developer",
+    blurb:
+      "Luckyworld is an exciting new addition to the Everyworld ecosystem, designed to offer players additional token utility where they can play custom real-money casino games by betting (and winning!) $EVERY. ",
+    coverImage: "luckyworld",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Zustand"],
+  },
   {
     type: "webDev",
     title: "Everyworld",
@@ -78,20 +107,20 @@ export const Projects = [
       "A fast-paced motion capture film about a hacker who navigates a virtual reality world to steal classified data while evading pursuers in the real world. The film blends high-tech heists with intense chase sequences, leaving audiences wondering if the hacker can outsmart his enemies and survive.",
     tags: ["UE5", "Motive", "MotionBuilder", "OptiTrack"],
   },
-  {
-    type: "webDev",
-    title: "Portfolio Website",
-    icon: <PersonIcon />,
-    year: "2024",
-    link: "/",
-    engine: "Unreal Engine 5 (2023)",
-    role: "Frontend Developer",
-    teamSize: "1",
-    blurb:
-      "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
-    coverImage: "portfolio",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
-  },
+  // {
+  //   type: "webDev",
+  //   title: "Portfolio Website",
+  //   icon: <PersonIcon />,
+  //   year: "2024",
+  //   link: "/",
+  //   engine: "Unreal Engine 5 (2023)",
+  //   role: "Frontend Developer",
+  //   teamSize: "1",
+  //   blurb:
+  //     "A personal portfolio website showcasing my skills, projects, and achievements. Designed with a focus on user experience and responsive design, the site highlights my expertise in front-end technologies and demonstrates my ability to create engaging, dynamic web experiences.",
+  //   coverImage: "portfolio",
+  //   tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+  // },
   {
     type: "webDev",
     title: "Sodoku Solver",

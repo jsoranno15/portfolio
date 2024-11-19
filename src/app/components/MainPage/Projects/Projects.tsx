@@ -26,7 +26,7 @@ export const Projects = [
     role: "Game Engineer",
     blurb:
       "The ultimate game for builders. Build your dream home with Hometopia’s powerful tools and realistic graphics. Collaborate with friends or build solo as you turn your creative vision to life. Build houses, neighborhoods, and entire cities.",
-    coverImage: "Hometopia",
+    coverImage: "hometopia",
     tags: ["Unity", "C#", "Figma"],
   },
   {

@@ -3,7 +3,7 @@ export const Experience = [
     timeFrame: "Oct 2024 — Present",
     title: "Game Engineer — Hometopia",
     points: [
-      "Designed and implemented UI/UX elements and menu systems in Unity for Hometopia, including an in-game screenshot tool that allowed players to capture and share their creations to their portfolio and Steam profile.",
+      "Designed and implemented UI/UX elements and menu systems in Unity for Hometopia, including an in-game screenshot tool that allows players to capture and share their creations to their portfolio and Steam profile.",
       "Integrated features such as post-processing settings, field-of-view settings, pop-ups, menus, buttons, toggles, search fields, animations, download systems, and save-to-portfolio systems to optimize interface performance and polish user workflows, contributing to Hometopia's successful Early Access front-page feature on Steam.",
     ],
     skills: ["Unity", "C#", "Figma"],
